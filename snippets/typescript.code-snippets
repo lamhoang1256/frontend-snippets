@@ -1,0 +1,49 @@
+{
+  "Define props component typescript": {
+    "prefix": "rafce-iprops",
+    "body": ["interface ${1:${TM_FILENAME_BASE}}Props {", "  $2", "}"],
+    "description": "Define props component typescript"
+  },
+  "Arrow Function Component Children Props Typescript": {
+    "prefix": "rafce-ichildren",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  children: React.ReactNode;",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({children}: ${1:${TM_FILENAME_BASE}}Props) => {",
+      "  return (",
+      "    <div>{children}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Arrow Function Component Children Props Typescript"
+  },
+  "Arrow Function Component Styled Components Typescript": {
+    "prefix": "rafce-ts-styled",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  $2",
+      "}",
+      "",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
+      "  $3",
+      "`",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: ${1:${TM_FILENAME_BASE}}Props) => {",
+      "  return (",
+      "    <Styled${1:${TM_FILENAME_BASE}}>${1:${TM_FILENAME_BASE}}</Styled${1:${TM_FILENAME_BASE}}>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Arrow Function Component Styled Components Typescript"
+  }
+}

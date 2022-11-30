@@ -1,0 +1,639 @@
+{
+  "Center with flexbox": {
+    "prefix": "flex-center",
+    "body": ["display: flex;", "justify-content: center;", "align-items: center;", "$0"],
+    "description": "Center with flexbox"
+  },
+  "Center with grid": {
+    "prefix": "grid-center",
+    "body": ["display: grid;", "place-items: center;", "$0"],
+    "description": "Center with grid"
+  },
+  "Absolute center both direction": {
+    "prefix": "abs-center",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%,-50%)",
+      "$0"
+    ],
+    "description": "Absolute center both direction"
+  },
+  "Position absolute center X direction": {
+    "prefix": "abs-center-x",
+    "body": ["position: absolute;", "left: 50%;", "transform: translateX(-50%);", "$0"],
+    "description": "Position absolute center X direction"
+  },
+  "Position absolute center Y direction": {
+    "prefix": "abs-center-y",
+    "body": ["position: absolute;", "top: 50%;", "transform: translateY(-50%);", "$0"],
+    "description": "Position absolute center Y direction"
+  },
+  "Flexbox center column direction": {
+    "prefix": "flex-center-col",
+    "body": [
+      "display:flex;",
+      "align-items:center;",
+      "justify-content:center;",
+      "flex-direction:column;",
+      "$0"
+    ],
+    "description": "Flexbox center column direction"
+  },
+  "Flexbox column": {
+    "prefix": "flex-col",
+    "body": ["display: flex;", "flex-direction: column;", "$0"],
+    "description": "Flexbox column"
+  },
+  "Flexbox center spacebetween": {
+    "prefix": "facb",
+    "body": ["display:flex;", "justify-content: space-between;", "align-items: center;", "$0"],
+    "description": "Flexbox center spacebetween"
+  },
+  "Text line clamp": {
+    "prefix": "line-clamp",
+    "body": [
+      "display:-webkit-box;",
+      "-webkit-line-clamp:${1:1};",
+      "-webkit-box-orient: vertical;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "word-break: break-word;",
+      "$0"
+    ],
+    "description": "Text line clamp"
+  },
+  "Text line clamp one line": {
+    "prefix": "line-clamp-single",
+    "body": [
+      "white-space:nowrap;",
+      "max-width:${1: 100%};",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "$0"
+    ],
+    "description": "Text line clamp one line"
+  },
+  "CSS size": {
+    "prefix": "size",
+    "body": ["width: $1;", "height: $2;"],
+    "description": "CSS size"
+  },
+  "CSS square": {
+    "prefix": "square",
+    "body": ["width: $1;", "height: $1;"],
+    "description": "CSS square"
+  },
+  "CSS square radius": {
+    "prefix": "square-radius",
+    "body": ["width: $1;", "height: $1;", "border-radius: $2;", "$3"],
+    "description": "CSS square radius"
+  },
+  "CSS circle": {
+    "prefix": "circle",
+    "body": ["width: $1;", "height: $1;", "border-radius: 50%;", "$2"],
+    "description": "CSS circle"
+  },
+  "CSS image cover": {
+    "prefix": "img-cover",
+    "body": ["width: 100%;", "height: 100%;", "object-fit: cover;", "$0"],
+    "description": "CSS image cover"
+  },
+  "Media max width": {
+    "prefix": "@max-w",
+    "body": ["@media screen and (max-width: $1){", "$2", "}"],
+    "description": "Media max width"
+  },
+  "Media min width": {
+    "prefix": "@min-w",
+    "body": ["@media screen and (min-width: $1){", "$2", "}"],
+    "description": "Media min width"
+  },
+  "CSS for placeholder": {
+    "prefix": "input-placeholder",
+    "body": [
+      "$1::-webkit-input-placeholder{",
+      "color: $2;",
+      "}",
+      "$1::-moz-input-placeholder{",
+      "color: $2;",
+      "}"
+    ],
+    "description": "CSS for placeholder"
+  },
+  "Hide scrollbar": {
+    "prefix": "scrollbar-hidden",
+    "body": [
+      ".${1:yourclass} {",
+      "-ms-overflow-style: none;",
+      "scrollbar-width: none;",
+      "}",
+      ".${1:yourclass}::-webkit-scrollbar {",
+      " display: none;",
+      "}"
+    ],
+    "description": "Hide scrollbar"
+  },
+  "Scroll snap": {
+    "prefix": "grid-scroll-snap",
+    "body": [
+      ".${1:yourclass} {",
+      "display: grid;",
+      "justify-content: flex-start;",
+      "grid-auto-columns: 90%;",
+      "grid-auto-flow: column;",
+      "grid-gap: 1.5rem;",
+      "overflow: auto;",
+      "overflow-y: hidden;",
+      "scroll-snap-type: x mandatory;",
+      "scroll-snap-stop: always;",
+      "-ms-touch-action: manipulation;",
+      "touch-action: manipulation;",
+      "-webkit-overflow-scrolling: touch;",
+      "scroll-padding: 1rem;",
+      "grid-template-columns: unset;",
+      "}",
+      ".${1:yourclass}::-webkit-scrollbar {",
+      "  display: none;",
+      "  width: 0;",
+      "}",
+      ".${1:yourclass} > *{",
+      "  scroll-snap-align: start;",
+      "}"
+    ],
+    "description": "Scroll snap"
+  },
+  "Grid layout": {
+    "prefix": "grid-layout",
+    "body": [
+      ".${1:your-class}{",
+      "    --columns: 4;",
+      "    --gap: 20px;",
+      "    display: grid;",
+      "    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));",
+      "    grid-gap: var(--gap);",
+      "}"
+    ],
+    "description": "Grid layout"
+  },
+  "Transition all": {
+    "prefix": "transition-all",
+    "body": ["transition: all 0.2s linear;", "$0"],
+    "description": "Transition all"
+  },
+  "Position absolute full": {
+    "prefix": "abs-full",
+    "body": ["position: absolute;", "top: 0;", "right: 0;", "bottom: 0;", "left: 0;", "$0"],
+    "description": "Position absolute full"
+  },
+  "Position fixed full": {
+    "prefix": "fixed-full",
+    "body": ["position: fixed;", "top: 0;", "right: 0;", "bottom: 0;", "left: 0;", "$0"],
+    "description": "Position fixed full"
+  },
+  "Position relative": {
+    "prefix": "relative",
+    "body": ["position: relative;", "$0"],
+    "description": "Position relative"
+  },
+  "Position absolute": {
+    "prefix": "absolute",
+    "body": ["position: absolute;", "$0"],
+    "description": "Position absolute"
+  },
+  "Position fixed": {
+    "prefix": "fixed",
+    "body": ["position: fixed;", "$0"],
+    "description": "Position fixed"
+  },
+  "Position sticky": {
+    "prefix": "sticky",
+    "body": ["position: sticky;", "$0"],
+    "description": "Position sticky"
+  },
+  "Display none": {
+    "prefix": "dnone",
+    "body": ["display: none;", "$0"],
+    "description": "Display none"
+  },
+  "Display block": {
+    "prefix": "dblock",
+    "body": ["display: block;", "$0"],
+    "description": "Display block"
+  },
+  "Display inline block": {
+    "prefix": "diblock",
+    "body": ["display: inline-block;", "$0"],
+    "description": "Display inline block"
+  },
+  "Using css grid": {
+    "prefix": "use-grid",
+    "body": ["display: grid;", "grid-template-columns: $1;", "grid-gap: $2;", "$3"],
+    "description": "Using css grid"
+  },
+  "Flexbox align center": {
+    "prefix": "facenter",
+    "body": ["display: flex;", "align-items: center;", "$0"],
+    "description": "Flexbox align center"
+  },
+  "Custom scrollbar": {
+    "prefix": "custom-scrollbar",
+    "body": [
+      "$1::-webkit-scrollbar {",
+      "  width: 1em;",
+      "}",
+      "$1::-webkit-scrollbar-track {",
+      "  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);",
+      "}",
+      "$1::-webkit-scrollbar-thumb {",
+      "  background-color: darkgrey;",
+      "}"
+    ],
+    "description": "Custom scrollbar"
+  },
+  "Width full": {
+    "prefix": "wfull",
+    "body": ["width: 100%;", "$0"],
+    "description": "Width full"
+  },
+  "Height full": {
+    "prefix": "hfull",
+    "body": ["height: 100%;", "$0"],
+    "description": "Height full"
+  },
+  "Size full": {
+    "prefix": "size-full",
+    "body": ["height: 100%;", "width: 100%;", "$0"],
+    "description": "Size full"
+  },
+  "Overflow hidden": {
+    "prefix": "overflow-hidden",
+    "body": ["overflow: hidden;", "$0"],
+    "description": "Overflow hidden"
+  },
+  "Overflow x hidden": {
+    "prefix": "overflow-x-hidden",
+    "body": ["overflow-x: hidden;", "$0"],
+    "description": "Overflow x hidden"
+  },
+  "Overflow y hidden": {
+    "prefix": "overflow-y-hidden",
+    "body": ["overflow-y: hidden;", "$0"],
+    "description": "Overflow y hidden"
+  },
+  "Overflow x auto": {
+    "prefix": "overflow-x-auto",
+    "body": ["overflow-x: auto;", "$0"],
+    "description": "Overflow x auto"
+  },
+  "Overflow y auto": {
+    "prefix": "overflow-y-auto",
+    "body": ["overflow-y: auto;", "$0"],
+    "description": "Overflow y auto"
+  },
+  "Text uppercase": {
+    "prefix": "uppercase",
+    "body": ["text-transform: uppercase;", "$0"],
+    "description": "Text uppercase"
+  },
+  "Text capitalize": {
+    "prefix": "capitalize",
+    "body": ["text-transform: capitalize;", "$0"],
+    "description": "Text capitalize"
+  },
+  "Text lowercase": {
+    "prefix": "lowercase",
+    "body": ["text-transform: lowercase;", "$0"],
+    "description": "Text lowercase"
+  },
+  "Font weight light": {
+    "prefix": "font-light",
+    "body": ["font-weight: 300;", "$0"],
+    "description": "Font weight light"
+  },
+  "Font weight normal": {
+    "prefix": "font-normal",
+    "body": ["font-weight: 400;", "$0"],
+    "description": "Font weight normal"
+  },
+  "Font weight medium": {
+    "prefix": "font-medium",
+    "body": ["font-weight: 500;", "$0"],
+    "description": "Font weight medium"
+  },
+  "Font weight semibold": {
+    "prefix": "font-semibold",
+    "body": ["font-weight: 600;", "$0"],
+    "description": "Font weight semibold"
+  },
+  "Font weight bold": {
+    "prefix": "font-bold",
+    "body": ["font-weight: 700;", "$0"],
+    "description": "Font weight bold"
+  },
+  "Font weight extrabold": {
+    "prefix": "font-extrabold",
+    "body": ["font-weight: 800;", "$0"],
+    "description": "Font weight extrabold"
+  },
+  "Font style itatlic": {
+    "prefix": "italic",
+    "body": ["font-style: italic;", "$0"],
+    "description": "Font style itatlic"
+  },
+  "Under pc": {
+    "prefix": "@1023",
+    "body": ["@media screen and (max-width: 1023.98px) {", "$0", "}", ""],
+    "description": "Under pc"
+  },
+  "Under tablet": {
+    "prefix": "@767",
+    "body": ["@media screen and (max-width: 767.98px) {", "$0", "}", ""],
+    "description": "Under tablet"
+  },
+  "Smallest screen": {
+    "prefix": "@374",
+    "body": ["@media screen and (max-width: 374.98px) {", "$0", "}", ""],
+    "description": "Smallest screen"
+  },
+  "Above Smallest screen": {
+    "prefix": "@375",
+    "body": ["@media screen and (min-width: 375px) {", "$0", "}", ""],
+    "description": "Above Smallest screen"
+  },
+  "Above mobile": {
+    "prefix": "@768",
+    "body": ["@media screen and (min-width: 768px) {", "$0", "}", ""],
+    "description": "Above mobile"
+  },
+  "Above tablet": {
+    "prefix": "@1024",
+    "body": ["@media screen and (min-width: 1024px) {", "$0", "}", ""],
+    "description": "Above tablet"
+  },
+  "Above small pc": {
+    "prefix": "@1280",
+    "body": ["@media screen and (min-width: 1280px) {", "$0", "}", ""],
+    "description": "Above small pc"
+  },
+  "Below small pc": {
+    "prefix": "@1279",
+    "body": ["@media screen and (max-width: 1279.98px) {", "$0", "}", ""],
+    "description": "Below small pc"
+  },
+  "CSS fast shadow 1": {
+    "prefix": "get-shadow1",
+    "body": ["box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;", "$0"],
+    "description": "CSS fast shadow 1"
+  },
+  "CSS fast shadow 2": {
+    "prefix": "get-shadow2",
+    "body": ["box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;", "$0"],
+    "description": "CSS fast shadow 2"
+  },
+  "CSS fast shadow 3": {
+    "prefix": "get-shadow3",
+    "body": ["box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;", "$0"],
+    "description": "CSS fast shadow 3"
+  },
+  "CSS fast shadow 4": {
+    "prefix": "get-shadow4",
+    "body": ["box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;", "$0"],
+    "description": "CSS fast shadow 4"
+  },
+  "CSS fast shadow 5": {
+    "prefix": "get-shadow5",
+    "body": ["box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;", "$0"],
+    "description": "CSS fast shadow 5"
+  },
+  "CSS fast gradient purple": {
+    "prefix": "gradient-purple",
+    "body": ["background-image: linear-gradient(270deg,#c042ff,#8a3cff);", "$0"],
+    "description": "CSS fast gradient purple"
+  },
+  "CSS fast gradient orange": {
+    "prefix": "gradient-orange",
+    "body": ["background-image: linear-gradient(to right top,#fc6c8f,#ffb86c);", "$0"],
+    "description": "CSS fast gradient orange"
+  },
+  "CSS fast gradient green": {
+    "prefix": "gradient-green",
+    "body": ["background-image: linear-gradient(to right, #1ABCF4, #5DEFB8);", "$0"],
+    "description": "CSS fast gradient green"
+  },
+  "CSS fast gradient pink": {
+    "prefix": "gradient-pink",
+    "body": ["background-image: linear-gradient(45deg, #fc6c8f, #ff2ced);", "$0"],
+    "description": "CSS fast gradient pink"
+  },
+  "Quick color purple": {
+    "prefix": "c-purple",
+    "body": ["#6A5AF9"],
+    "description": "Quick color purple"
+  },
+  "Quick color blue": {
+    "prefix": "c-blue",
+    "body": ["#2cccff"],
+    "description": "Quick color blue"
+  },
+  "Quick color green": {
+    "prefix": "c-green",
+    "body": ["#20E3B2"],
+    "description": "Quick color green"
+  },
+  "Quick color orange": {
+    "prefix": "c-orange",
+    "body": ["#FF6651"],
+    "description": "Quick color orange"
+  },
+  "Quick color pink": {
+    "prefix": "c-pink",
+    "body": ["#F62682"],
+    "description": "Quick color pink"
+  },
+  "Quick color gray": {
+    "prefix": "c-gray",
+    "body": ["#eee"],
+    "description": "Quick color gray"
+  },
+  "Rounded full": {
+    "prefix": "rounded-full",
+    "body": ["border-radius: 50%;", "$0"],
+    "description": "Rounded full"
+  },
+  "Line height calc": {
+    "prefix": "leading-calc",
+    "body": ["line-height: calc($1 / $2);", "$0"],
+    "description": "Line height calc"
+  },
+  "Line height none": {
+    "prefix": "leading-none",
+    "body": ["line-height: 1;", "$0"],
+    "description": "Line height none"
+  },
+  "Text center": {
+    "prefix": "text-center",
+    "body": ["text-align: center;", "$0"],
+    "description": "Text center"
+  },
+  "Text right": {
+    "prefix": "text-right",
+    "body": ["text-align: right;", "$0"],
+    "description": "Text right"
+  },
+  "Text justify": {
+    "prefix": "text-justify",
+    "body": ["text-align: justify;", "$0"],
+    "description": "Text justify"
+  },
+  "Text left": {
+    "prefix": "text-left",
+    "body": ["text-align: left;", "$0"],
+    "description": "Text left"
+  },
+  "Cursor pointer": {
+    "prefix": "cursor-pointer",
+    "body": ["cursor: pointer;", "$0"],
+    "description": "Cursor pointer"
+  },
+  "Cursor not allowed": {
+    "prefix": "cursor-not-allowed",
+    "body": ["cursor: not-allowed;", "$0"],
+    "description": "Cursor not allowed"
+  },
+  "Pointer events none": {
+    "prefix": "pointer-none",
+    "body": ["pointer-events: none;", "$0"],
+    "description": "Pointer events none"
+  },
+  "Outline none": {
+    "prefix": "outline-none",
+    "body": ["outline: none;", "$0"],
+    "description": "Outline none"
+  },
+  "Border none": {
+    "prefix": "border-none",
+    "body": ["border: none;", "$0"],
+    "description": "Border none"
+  },
+  "Flex shrink 0": {
+    "prefix": "shrink-0",
+    "body": ["flex-shrink: 0;", "$0"],
+    "description": "Flex shrink 0"
+  },
+  "Margin x auto": {
+    "prefix": "mx-auto",
+    "body": ["margin-left: auto;", "margin-right: auto;", "$0"],
+    "description": "Margin x auto"
+  },
+  "Width max content": {
+    "prefix": "w-max",
+    "body": ["width: max-content;", "$0"],
+    "description": "Width max content"
+  },
+  "Width min content": {
+    "prefix": "w-min",
+    "body": ["width: min-content;", "$0"],
+    "description": "Width min content"
+  },
+  "Width fit content": {
+    "prefix": "w-fit",
+    "body": ["width: fit-content;", "$0"],
+    "description": "Width fit content"
+  },
+  "Object fit cover": {
+    "prefix": "object-cover",
+    "body": ["object-fit: cover;", "$0"],
+    "description": "Object fit cover"
+  },
+  "Object fit contain": {
+    "prefix": "object-contain",
+    "body": ["object-fit: contain;", "$0"],
+    "description": "Object fit contain"
+  },
+  "Object fit fill": {
+    "prefix": "object-fill",
+    "body": ["object-fit: fill;", "$0"],
+    "description": "Object fit fill"
+  },
+  "Background cover": {
+    "prefix": "bg-cover",
+    "body": ["background-size: cover;", "$0"],
+    "description": "Background cover"
+  },
+  "Break all": {
+    "prefix": "break-all",
+    "body": ["word-break: break-all;", "$0"],
+    "description": "Break all"
+  },
+  "Break word": {
+    "prefix": "break-word",
+    "body": ["word-break: break-word;", "$0"],
+    "description": "Break word"
+  },
+  "Aspect ratio video": {
+    "prefix": "aspect-video",
+    "body": ["aspect-ratio: 16/9", "$0"],
+    "description": "Aspect ratio 16/9"
+  },
+  "Aspect ratio square": {
+    "prefix": "aspect-square",
+    "body": ["aspect-ratio: 1/1;", "$0"],
+    "description": "Aspect ratio square"
+  },
+  "Aspect ratio custom": {
+    "prefix": "aspect-custom",
+    "body": ["aspect-ratio: $1/$2", "$3"],
+    "description": "Aspect ratio custom"
+  },
+  "CSS reset": {
+    "prefix": "css-reset",
+    "body": [
+      "*,",
+      "*::before,",
+      "*::after {",
+      "  box-sizing: border-box;",
+      "}",
+      "* {",
+      "  margin: 0;",
+      "  padding: 0;",
+      "}",
+      "",
+      "html,",
+      "body {",
+      "  height: 100%;",
+      "}",
+      "body {",
+      "  line-height: 1.5;",
+      "}",
+      "",
+      "img,",
+      "picture,",
+      "video,",
+      "canvas,",
+      "svg {",
+      "  display: block;",
+      "  max-width: 100%;",
+      "}",
+      "input,",
+      "button,",
+      "textarea,",
+      "select {",
+      "  font: inherit;",
+      "  outline: none;",
+      "}",
+      "p,",
+      "h1,",
+      "h2,",
+      "h3,",
+      "h4,",
+      "h5,",
+      "h6 {",
+      "  overflow-wrap: break-word;",
+      "}",
+      "$0"
+    ],
+    "description": "CSS reset"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "name": "frontend-snippets",
+  "displayName": "Frontend snippets",
+  "description": "Useful snippets for Frontend Developer",
+  "publisher": "lamhoang1256",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lamhoang1256/frontend-snippets"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "css",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "styled-css",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "source.css.styled",
+        "path": "./snippets/css.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascriptreact.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascriptreact.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascriptreact.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascriptreact.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/jsx.code-snippets"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/jsx.code-snippets"
+      },
+      {
+        "language": "jsx-attr",
+        "path": "./snippets/jsx.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/tailwindcss.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/tailwindcss.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/tailwindcss.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/tailwindcss.code-snippets"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/tailwindcss.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "tsx",
+        "path": "./snippets/typescript.code-snippets"
+      }
+    ]
+  }
+}
