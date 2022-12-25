@@ -178,7 +178,7 @@
     "description": "Classname styles module"
   },
   "Import const styles module": {
-    "prefix": "styles-module",
+    "prefix": "import-styles",
     "body": ["import styles from '$1'"],
     "description": "Import const styles module"
   },

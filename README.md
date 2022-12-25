@@ -2,6 +2,8 @@
 
 My useful snippets for Frontend Developers
 
+> My snippets is referenced from [dsznajder](https://github.com/ults-io/vscode-react-javascript-snippets) and [evondev](https://github.com/evondev/evondev-snippets)
+
 ## ![html](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fhtml.svg&w=25&h=25) Table of HTML snippets
 
 | Prefix            | Description                                  |
@@ -133,49 +135,49 @@ My useful snippets for Frontend Developers
 
 ## ![javascript](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fjavascript.svg&w=25&h=25) Table of Javascript snippets
 
-| Prefix                    | Description                                                   |
-| ------------------------- | ------------------------------------------------------------- |
-| `rafc`                    | [View Code](docs/reactsnippets.md#rafc)                       |
-| `rafce`                   | [View Code](docs/reactsnippets.md#rafce)                      |
-| `rafce-styled`            | [View Code](docs/reactsnippets.md#rafce-styled)               |
-| `rafcp`                   | [View Code](docs/reactsnippets.md#rafcp)                      |
-| `rfc`                     | [View Code](docs/reactsnippets.md#rfc)                        |
-| `clipboard-copy`          | Quick copy to clipboard                                       |
-| `render-array-list`       | React array rendering list                                    |
-| `format-date-vn`          | Display time VN                                               |
-| `scroll-to-top`           | Scroll to top                                                 |
-| `scroll-to-bottom`        | Scroll to bottom                                              |
-| `react-proptypes`         | Using PropTypes in React                                      |
-| `react-styled-c`          | Using Styled Components in React                              |
-| `react-hook-form`         | Using React Hook Form in React                                |
-| `clg`                     | Console log                                                   |
-| `set-interval`            | setInterval(() => { }, intervalTime)                          |
-| `set-timeout`             | setTimeout(() => { }, delayTime)                              |
-| `query-selector`          | Document query selector                                       |
-| `query-selector-all`      | Document query selector all                                   |
-| `eclick`                  | addEventListener click                                        |
-| `useAppContext`           | Create useAppContext                                          |
-| `class-styles`            | Classname styles module                                       |
-| `styles-module`           | Import const styles module                                    |
-| `useEffectCleanupSnippet` | useEffect With CleanUp                                        |
-| `useEffectSnippet`        | Using useEffect React hook                                    |
-| `useCallbackSnippet`      | Using useCallback React hook                                  |
-| `useContextSnippet`       | Using useContext React hook                                   |
-| `useLayoutEffectSnippet`  | Using useLayoutEffect React hook                              |
-| `useMemoSnippet`          | Using useMemo React hook                                      |
-| `useReducerSnippet`       | Using useReducer React hook                                   |
-| `useRefSnippet`           | Using useRef React hook                                       |
-| `useStateSnippet`         | Using useState React hook                                     |
-| `clj`                     | Logs stringified JSON property with name                      |
-| `idl`                     | Import components to index file and export list               |
-| `ied`                     | Import component to index file and export default             |
-| `redux-slice`             | Create a slice redux                                          |
-| `for-each`                | Create a forEach loop                                         |
-| `for-of`                  | Create a for of loop                                          |
-| `for-in`                  | Create a for in loop                                          |
-| `destructing-object`      | Creates and assigns a local variable using object destructing |
-| `destructing-array`       | Creates and assigns a local variable using array destructing  |
-| `promise`                 | Creates and returns a new Promise                             |
+| Prefix                    | Description                                       |
+| ------------------------- | ------------------------------------------------- |
+| `rafc`                    | [View Code](docs/reactsnippets.md#rafc)           |
+| `rafce`                   | [View Code](docs/reactsnippets.md#rafce)          |
+| `rafce-styled`            | [View Code](docs/reactsnippets.md#rafce-styled)   |
+| `rafcp`                   | [View Code](docs/reactsnippets.md#rafcp)          |
+| `rfc`                     | [View Code](docs/reactsnippets.md#rfc)            |
+| `clipboard-copy`          | Quick copy to clipboard                           |
+| `render-array-list`       | React array rendering list                        |
+| `format-date-vn`          | Display time VN                                   |
+| `scroll-to-top`           | Scroll to top                                     |
+| `scroll-to-bottom`        | Scroll to bottom                                  |
+| `react-proptypes`         | Using PropTypes in React                          |
+| `react-styled-c`          | Using Styled Components in React                  |
+| `react-hook-form`         | Using React Hook Form in React                    |
+| `clg`                     | Console log                                       |
+| `set-interval`            | setInterval(() => { }, intervalTime)              |
+| `set-timeout`             | setTimeout(() => { }, delayTime)                  |
+| `query-selector`          | Document query selector                           |
+| `query-selector-all`      | Document query selector all                       |
+| `eclick`                  | addEventListener click                            |
+| `useAppContext`           | Create useAppContext                              |
+| `class-styles`            | className={styles.}                               |
+| `import-styles`           | import styles from ''                             |
+| `useEffectCleanupSnippet` | useEffect With CleanUp                            |
+| `useEffectSnippet`        | Using useEffect React hook                        |
+| `useCallbackSnippet`      | Using useCallback React hook                      |
+| `useContextSnippet`       | Using useContext React hook                       |
+| `useLayoutEffectSnippet`  | Using useLayoutEffect React hook                  |
+| `useMemoSnippet`          | Using useMemo React hook                          |
+| `useReducerSnippet`       | Using useReducer React hook                       |
+| `useRefSnippet`           | Using useRef React hook                           |
+| `useStateSnippet`         | Using useState React hook                         |
+| `clj`                     | Logs stringified JSON property with name          |
+| `idl`                     | Import components to index file and export list   |
+| `ied`                     | Import component to index file and export default |
+| `redux-slice`             | Create a slice redux                              |
+| `for-each`                | Create a forEach loop                             |
+| `for-of`                  | Create a for of loop                              |
+| `for-in`                  | Create a for in loop                              |
+| `destructing-object`      | Declare variable using object destructing         |
+| `destructing-array`       | Declare variable using array destructing          |
+| `promise`                 | Creates and returns a new Promise                 |
 
 ## ![typescript](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Ftypescript.svg&w=25&h=25) Table of Typescript snippets
 
@@ -189,22 +191,22 @@ My useful snippets for Frontend Developers
 
 ## ![tailwindcss](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Ftailwindcss.svg&w=25&h=25) Table of TaiwindCSS snippets
 
-| Prefix                  | Description                                   |
-| ----------------------- | --------------------------------------------- |
-| `tw-input`              | Display input with TaiwindCSS                 |
-| `tw-input-v2`           | Display input v2 with TaiwindCSS              |
-| `tw-input-search`       | Display input search with TaiwindCSS          |
-| `tw-input-search-clear` | Display input search clear with TaiwindCSS    |
-| `tw-upload`             | Display upload file with TaiwindCSS           |
-| `tw-button`             | Display button with TaiwindCSS                |
-| `tw-button-outline`     | Display button outline with TaiwindCSS        |
-| `tw-button-combination` | Display button combination with TaiwindCSS    |
-| `tw-skeleton`           | Display loading skeleton with TaiwindCSS      |
-| `tw-loading-circle`     | Display loading circle with TaiwindCSS        |
-| `tw-dropdown`           | Display dropdown with TaiwindCSS              |
-| `tw-five-stars`         | Display five stars with TaiwindCSS            |
-| `tw-textarea`           | Display textarea with TaiwindCSS              |
-| `tw-overlay`            | Display overlay with TaiwindCSS               |
-| `tw-password-toggle`    | Display input password toggle with TaiwindCSS |
+| Prefix                  | Description                   |
+| ----------------------- | ----------------------------- |
+| `tw-input`              | Display input                 |
+| `tw-input-v2`           | Display input v2              |
+| `tw-input-search`       | Display input search          |
+| `tw-input-search-clear` | Display input search clear    |
+| `tw-upload`             | Display upload file           |
+| `tw-button`             | Display button                |
+| `tw-button-outline`     | Display button outline        |
+| `tw-button-combination` | Display button combination    |
+| `tw-skeleton`           | Display loading skeleton      |
+| `tw-loading-circle`     | Display loading circle        |
+| `tw-dropdown`           | Display dropdown              |
+| `tw-five-stars`         | Display five stars            |
+| `tw-textarea`           | Display textarea              |
+| `tw-overlay`            | Display overlay               |
+| `tw-password-toggle`    | Display input password toggle |
 
 ### 👉 If you like this project, give it a star ✨ and share 👨🏻‍💻 it to your friends 👈

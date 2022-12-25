@@ -1,12 +1,22 @@
 {
   "name": "frontend-snippets",
   "displayName": "Frontend snippets",
-  "description": "Useful snippets for Frontend Developer",
+  "description": "My useful snippets for Frontend Developers",
   "publisher": "lamhoang1256",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.20.0"
   },
+  "keywords": [
+    "snippets",
+    "react",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "taiwindcss"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/lamhoang1256/frontend-snippets"
