@@ -209,9 +209,7 @@
     "body": [
       "import styled from 'styled-components'",
       "",
-      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
-      "  $2",
-      "`",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.div``",
       "",
       "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",

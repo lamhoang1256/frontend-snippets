@@ -416,22 +416,22 @@
   },
   "QuickGradientPurple": {
     "prefix": "gradient-purple",
-    "body": ["linear-gradient(270deg,#c042ff,#8a3cff);", "$0"],
+    "body": ["linear-gradient(270deg, #c042ff, #8a3cff)", "$0"],
     "description": "Quick gradient purple"
   },
   "QuickGradientOrange": {
     "prefix": "gradient-orange",
-    "body": ["linear-gradient(to right top,#fc6c8f,#ffb86c);", "$0"],
+    "body": ["linear-gradient(45deg, #fc6c8f, #ffb86c)", "$0"],
     "description": "Quick gradient orange"
   },
   "QuickGradientGreen": {
     "prefix": "gradient-green",
-    "body": ["linear-gradient(to right, #1ABCF4, #5DEFB8);", "$0"],
+    "body": ["linear-gradient(90deg, #1ABCF4, #5DEFB8)", "$0"],
     "description": "Quick gradient green"
   },
   "QuickGradientPink": {
     "prefix": "gradient-pink",
-    "body": ["linear-gradient(45deg, #fc6c8f, #ff2ced);", "$0"],
+    "body": ["linear-gradient(45deg, #fc6c8f, #ff2ced)", "$0"],
     "description": "Quick gradient pink"
   },
   "QuickColorPurple": {

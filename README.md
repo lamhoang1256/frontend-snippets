@@ -1,10 +1,15 @@
 # **Coding Frontend faster than ever ⚡️🚀**
 
-## Table of HTML snippets 🧑‍💻
+## ![html](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fhtml.svg&w=25&h=25) Table of HTML snippets
 
-| Prefix                  | Code                                          |
+| Prefix            | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `poppins-ggfonts` | Import Poppins font family from Google Fonts |
+
+## ![tailwindcss](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Ftailwindcss.svg&w=25&h=25) Table of TaiwindCSS snippets
+
+| Prefix                  | Description                                   |
 | ----------------------- | --------------------------------------------- |
-| `poppins-ggfonts`       | Import Poppins font family from Google Fonts  |
 | `tw-input`              | Display input with TaiwindCSS                 |
 | `tw-input-v2`           | Display input v2 with TaiwindCSS              |
 | `tw-input-search`       | Display input search with TaiwindCSS          |
@@ -21,18 +26,19 @@
 | `tw-overlay`            | Display overlay with TaiwindCSS               |
 | `tw-password-toggle`    | Display input password toggle with TaiwindCSS |
 
-## Table of Typescript snippets 🧑‍💻
+## ![typescript](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Ftypescript.svg&w=25&h=25) Table of Typescript snippets
 
-| Prefix             | Code |
-| ------------------ | ---- | ------------------------------------------------------------ |
-| `tsrafce`          |      | React Arrow Function Component and TypeScript interface      |
-| `tsrafce-children` |      | React Arrow Function Component Children props and TypeScript |
-| `tsrafce-styled`   |      | React Arrow Function Component with Styled Components and    |
-| `tsrafc`           |      | React Arrow Function Component and TypeScript interface      |
+| Prefix             | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| `tsrafce`          | React Arrow Function Component and TypeScript interface      |
+| `tsrafce-children` | React Arrow Function Component Children props and TypeScript |
+| `tsrafce-styled`   | React Arrow Function Component with Styled Components and    |
+| `tsrafc`           | React Arrow Function Component and TypeScript interface      |
+| `expint`           | Create and export interface Typescript                       |
 
-## Table of Javascript snippets 🧑‍💻
+## ![javascript](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fjavascript.svg&w=25&h=25) Table of Javascript snippets
 
-| Prefix                    | Code                                                          |
+| Prefix                    | Description                                                   |
 | ------------------------- | ------------------------------------------------------------- |
 | `clipboard-copy`          | Quick copy to clipboard                                       |
 | `render-array-list`       | React array rendering list                                    |
@@ -76,9 +82,9 @@
 | `destructing-array`       | Creates and assigns a local variable using array destructing  |
 | `promise`                 | Creates and returns a new Promise                             |
 
-## Table of CSS snippets 🧑‍💻
+## ![css](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fcss.svg&w=25&h=25) Table of CSS snippets
 
-| Prefix               | Code                                          |
+| Prefix               | Description                                   |
 | -------------------- | --------------------------------------------- |
 | `poppins-ggfonts`    | Import Poppins font family from Google Fonts  |
 | `abs-center`         | Absolute center both direction                |
@@ -146,10 +152,6 @@
 | `get-shadow3`        | Quick box shadow 3                            |
 | `get-shadow4`        | Quick box shadow 4                            |
 | `get-shadow5`        | Quick box shadow 5                            |
-| `gradient-purple`    | Quick gradient purple                         |
-| `gradient-orange`    | Quick gradient orange                         |
-| `gradient-green`     | Quick gradient green                          |
-| `gradient-pink`      | Quick gradient pink                           |
 | `linear-gradient`    | Background linear gradient                    |
 | `text-gradient`      | Styles text gradient                          |
 | `rounded-full`       | Rounded full                                  |
@@ -187,13 +189,24 @@
 | `bg-repeat`          | Background repeat                             |
 | `bg-no-repeat`       | Background norepeat                           |
 
-## Table of CSS quick color snippets 🧑‍💻
+## ![css](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fcss.svg&w=25&h=25) Table of CSS quick color snippets
 
-| Prefix     | Color                                           | HEX     |
-| ---------- | ----------------------------------------------- | ------- |
-| `c-purple` | ![#6A5AF9](https://fakeimg.pl/30/6A5AF9?text=+) | #6A5AF9 |
-| `c-blue`   | ![#2979FF](https://fakeimg.pl/30/2979FF?text=+) | #2979FF |
-| `c-green`  | ![#20E3B2](https://fakeimg.pl/30/20E3B2?text=+) | #20E3B2 |
-| `c-orange` | ![#FF6651](https://fakeimg.pl/30/FF6651?text=+) | #FF6651 |
-| `c-pink`   | ![#F62682](https://fakeimg.pl/30/F62682?text=+) | #F62682 |
-| `c-gray`   | ![#DDDDDD](https://fakeimg.pl/30/DDDDDD?text=+) | #DDDDDD |
+| Prefix     | Color                                           | HEX     | RGB                |
+| ---------- | ----------------------------------------------- | ------- | ------------------ |
+| `c-purple` | ![#6A5AF9](https://fakeimg.pl/30/6A5AF9?text=+) | #6A5AF9 | rgb(105, 89, 250)  |
+| `c-blue`   | ![#2979FF](https://fakeimg.pl/30/2979FF?text=+) | #2979FF | rgb(41, 121, 255)  |
+| `c-green`  | ![#20E3B2](https://fakeimg.pl/30/20E3B2?text=+) | #20E3B2 | rgb(32, 227, 178)  |
+| `c-orange` | ![#FF6651](https://fakeimg.pl/30/FF6651?text=+) | #FF6651 | rgb(255, 102, 81)  |
+| `c-pink`   | ![#F62682](https://fakeimg.pl/30/F62682?text=+) | #F62682 | rgb(246, 38, 130)  |
+| `c-gray`   | ![#DDDDDD](https://fakeimg.pl/30/DDDDDD?text=+) | #DDDDDD | rgb(221, 221, 221) |
+
+## ![css](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Fcss.svg&w=25&h=25) Table of CSS quick gradient snippets
+
+| Prefix            | Description                               |
+| ----------------- | ----------------------------------------- |
+| `gradient-purple` | linear-gradient(270deg, #c042ff, #8a3cff) |
+| `gradient-orange` | linear-gradient(45deg, #fc6c8f, #ffb86c)  |
+| `gradient-green`  | linear-gradient(90deg, #1ABCF4, #5DEFB8)  |
+| `gradient-pink`   | linear-gradient(45deg, #fc6c8f, #ff2ced)  |
+
+### 👉 If you like this project, give it a star ✨ and share 👨🏻‍💻 it to your friends 👈
