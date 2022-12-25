@@ -53,7 +53,7 @@
       "  defaultValues: {},",
       "});"
     ],
-    "description": "Using react hook form in react"
+    "description": "Using React Hook Form in React"
   },
   "ConsoleLog": {
     "prefix": "clg",
@@ -63,27 +63,27 @@
   "SetInterval": {
     "prefix": "set-interval",
     "body": ["setInterval(() => { ${1} }, ${2})"],
-    "description": "setInterval(() => { }, intervalTime"
+    "description": "setInterval(() => { }, intervalTime)"
   },
   "SetTimeOut": {
     "prefix": "set-timeout",
     "body": ["setTimeout(() => { ${1} }, ${2})"],
-    "description": "setTimeout(() => { }, delayTime"
+    "description": "setTimeout(() => { }, delayTime)"
   },
   "QuerySelector": {
     "prefix": "query-selector",
     "body": ["document.querySelector('$1');"],
-    "description": "Query Selector"
+    "description": "Document query selector"
   },
   "QuerySelectorAll": {
     "prefix": "query-selector-all",
     "body": ["document.querySelectorAll('$1');"],
-    "description": "Query Selector All"
+    "description": "Document query selector all"
   },
   "ClickAddEventListener": {
     "prefix": "eclick",
     "body": ["$1.addEventListener('click', function(){", " $2 ", "})"],
-    "description": "Click addEventListener"
+    "description": "addEventListener click"
   },
   "useEffectWithCleanUp": {
     "prefix": "useEffectCleanupSnippet",
@@ -138,10 +138,6 @@
   "useState": {
     "prefix": "useStateSnippet",
     "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(${2})"]
-  },
-  "ExportInterface": {
-    "prefix": "expint",
-    "body": ["export interface $1 {$2}"]
   },
   "Create useAppContext": {
     "prefix": "useAppContext",
@@ -227,7 +223,6 @@
     ],
     "description": "Creates a React Arrow Function Component Styled Components"
   },
-  // new
   "ArrowFunctionComponentWithPropTypes": {
     "prefix": "rafcp",
     "body": [
@@ -262,7 +257,7 @@
   "ConsoleLogJson": {
     "prefix": "clj",
     "body": ["console.log('${1:obj}', JSON.stringify(${1:obj}, null, 2))"],
-    "description": "Logs stringified JSON property with name."
+    "description": "Logs stringified JSON property with name"
   },
   "ImportAndExportList": {
     "prefix": "idl",
@@ -292,22 +287,23 @@
       "export const {} = ${1:${TM_FILENAME_BASE}}.actions",
       "",
       "export default ${1:${TM_FILENAME_BASE}}.reducer"
-    ]
+    ],
+    "description": "Create a slice redux"
   },
   "ForEach": {
     "prefix": "for-each",
     "body": ["${1}.forEach(${2} => {${3}})"],
-    "description": "Creates a forEach statement"
+    "description": "Create a forEach loop"
   },
   "ForOf": {
     "prefix": "for-of",
     "body": ["for(let ${1} of ${2}) {${3}}"],
-    "description": "Iterating over property names of iterable objects"
+    "description": "Create a for of loop"
   },
   "ForIn": {
     "prefix": "for-in",
     "body": ["for(let ${1} in ${2}) {${3}}"],
-    "description": "Iterating over property values of iterable objects"
+    "description": "Create a for in loop"
   },
   "DestructingObject": {
     "prefix": "destructing-object",

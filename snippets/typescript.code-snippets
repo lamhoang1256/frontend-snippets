@@ -60,6 +60,11 @@
     ],
     "description": "Creates a React Arrow Function Component with Styled Components and Typescript interface"
   },
+  "ExportInterface": {
+    "prefix": "expint",
+    "body": ["export interface $1 {$2}"],
+    "description": "Create and export interface Typescript"
+  },
   "ArrowFunctionComponentInterface": {
     "prefix": "tsrafc",
     "body": [

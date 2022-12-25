@@ -21,6 +21,61 @@
 | `tw-overlay`            | Display overlay with TaiwindCSS               |
 | `tw-password-toggle`    | Display input password toggle with TaiwindCSS |
 
+## Table of Typescript snippets 🧑‍💻
+
+| Prefix             | Code |
+| ------------------ | ---- | ------------------------------------------------------------ |
+| `tsrafce`          |      | React Arrow Function Component and TypeScript interface      |
+| `tsrafce-children` |      | React Arrow Function Component Children props and TypeScript |
+| `tsrafce-styled`   |      | React Arrow Function Component with Styled Components and    |
+| `tsrafc`           |      | React Arrow Function Component and TypeScript interface      |
+
+## Table of Javascript snippets 🧑‍💻
+
+| Prefix                    | Code                                                          |
+| ------------------------- | ------------------------------------------------------------- |
+| `clipboard-copy`          | Quick copy to clipboard                                       |
+| `render-array-list`       | React array rendering list                                    |
+| `format-date-vn`          | Display time VN                                               |
+| `scroll-to-top`           | Scroll to top                                                 |
+| `scroll-to-bottom`        | Scroll to bottom                                              |
+| `react-proptypes`         | Using PropTypes in React                                      |
+| `react-styled-c`          | Using Styled Components in React                              |
+| `react-hook-form`         | Using React Hook Form in React                                |
+| `clg`                     | Console log                                                   |
+| `set-interval`            | setInterval(() => { }, intervalTime)                          |
+| `set-timeout`             | setTimeout(() => { }, delayTime)                              |
+| `query-selector`          | Document query selector                                       |
+| `query-selector-all`      | Document query selector all                                   |
+| `eclick`                  | addEventListener click                                        |
+| `useEffectCleanupSnippet` | useEffect With CleanUp                                        |
+| `useEffectSnippet`        |                                                               |
+| `useCallbackSnippet`      |                                                               |
+| `useContextSnippet`       |                                                               |
+| `useLayoutEffectSnippet`  |                                                               |
+| `useMemoSnippet`          |                                                               |
+| `useReducerSnippet`       |                                                               |
+| `useRefSnippet`           |                                                               |
+| `useStateSnippet`         |                                                               |
+| `useAppContext`           | Create useAppContext                                          |
+| `class-styles`            | Classname styles module                                       |
+| `styles-module`           | Import const styles module                                    |
+| `rafc`                    |                                                               |
+| `rafce`                   |                                                               |
+| `rafce-styled`            |                                                               |
+| `rafcp`                   |                                                               |
+| `rfc`                     |                                                               |
+| `clj`                     | Logs stringified JSON property with name                      |
+| `idl`                     | Import components to index file and export list               |
+| `ied`                     | Import component to index file and export default             |
+| `redux-slice`             | Create a slice redux                                          |
+| `for-each`                | Create a forEach loop                                         |
+| `for-of`                  | Create a for of loop                                          |
+| `for-in`                  | Create a for in loop                                          |
+| `destructing-object`      | Creates and assigns a local variable using object destructing |
+| `destructing-array`       | Creates and assigns a local variable using array destructing  |
+| `promise`                 | Creates and returns a new Promise                             |
+
 ## Table of CSS snippets 🧑‍💻
 
 | Prefix               | Code                                          |
@@ -134,11 +189,11 @@
 
 ## Table of CSS quick color snippets 🧑‍💻
 
-| Color      | Hex                                                              |
-| ---------- | ---------------------------------------------------------------- |
-| `c-purple` | ![#6A5AF9](https://via.placeholder.com/10/6A5AF9?text=+) #6A5AF9 |
-| `c-blue`   | ![#2979FF](https://via.placeholder.com/10/2979FF?text=+) #2979FF |
-| `c-green`  | ![#20E3B2](https://via.placeholder.com/10/20E3B2?text=+) #20E3B2 |
-| `c-orange` | ![#FF6651](https://via.placeholder.com/10/FF6651?text=+) #FF6651 |
-| `c-pink`   | ![#F62682](https://via.placeholder.com/10/F62682?text=+) #F62682 |
-| `c-gray`   | ![#DDD](https://via.placeholder.com/10/DDD?text=+) #DDD          |
+| Prefix     | Color                                           | HEX     |
+| ---------- | ----------------------------------------------- | ------- |
+| `c-purple` | ![#6A5AF9](https://fakeimg.pl/30/6A5AF9?text=+) | #6A5AF9 |
+| `c-blue`   | ![#2979FF](https://fakeimg.pl/30/2979FF?text=+) | #2979FF |
+| `c-green`  | ![#20E3B2](https://fakeimg.pl/30/20E3B2?text=+) | #20E3B2 |
+| `c-orange` | ![#FF6651](https://fakeimg.pl/30/FF6651?text=+) | #FF6651 |
+| `c-pink`   | ![#F62682](https://fakeimg.pl/30/F62682?text=+) | #F62682 |
+| `c-gray`   | ![#DDDDDD](https://fakeimg.pl/30/DDDDDD?text=+) | #DDDDDD |
