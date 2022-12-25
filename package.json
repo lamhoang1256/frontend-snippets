@@ -18,6 +18,10 @@
   "contributes": {
     "snippets": [
       {
+        "language": "html",
+        "path": "./snippets/html.code-snippets"
+      },
+      {
         "language": "css",
         "path": "./snippets/css.code-snippets"
       },
@@ -34,60 +38,28 @@
         "path": "./snippets/css.code-snippets"
       },
       {
-        "language": "html",
-        "path": "./snippets/html.code-snippets"
-      },
-      {
         "language": "javascript",
-        "path": "./snippets/javascriptreact.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/javascriptreact.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/javascriptreact.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/javascriptreact.code-snippets"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/jsx.code-snippets"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/jsx.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "jsx",
-        "path": "./snippets/jsx.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "jsx-attr",
-        "path": "./snippets/jsx.code-snippets"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/tailwindcss.code-snippets"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/tailwindcss.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/tailwindcss.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/tailwindcss.code-snippets"
-      },
-      {
-        "language": "jsx",
-        "path": "./snippets/tailwindcss.code-snippets"
+        "path": "./snippets/javascript.code-snippets"
       },
       {
         "language": "typescript",
@@ -100,6 +72,70 @@
       {
         "language": "tsx",
         "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "tsx-attr",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "tsx",
+        "path": "./snippets/reacttailwind.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "jsx-attr",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "tsx",
+        "path": "./snippets/global.code-snippets"
+      },
+      {
+        "language": "tsx-attr",
+        "path": "./snippets/global.code-snippets"
       }
     ]
   }

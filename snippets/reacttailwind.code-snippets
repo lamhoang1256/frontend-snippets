@@ -1,6 +1,5 @@
 {
-  // Input
-  "Tailwind input": {
+  "Input": {
     "prefix": "tw-input",
     "body": [
       "<input",
@@ -9,9 +8,9 @@
       "  className=\"w-full max-w-[350px] px-5 py-3 rounded bg-transparent outline-none border border-slate-200 focus:border focus:border-slate-400\"",
       "/>"
     ],
-    "description": "Tailwind input"
+    "description": "Display input with TaiwindCSS"
   },
-  "Tailwind input v2": {
+  "InputV2": {
     "prefix": "tw-input-v2",
     "body": [
       "<div className=\"w-full max-w-[350px] relative\">",
@@ -28,9 +27,9 @@
       "  />",
       "</div>"
     ],
-    "description": "Tailwind input v2"
+    "description": "Display input v2 with TaiwindCSS"
   },
-  "Tailwind input search": {
+  "InputSearch": {
     "prefix": "tw-input-search",
     "body": [
       "<div className=\"flex items-center gap-5 max-w-[350px] border border-gray-200 rounded-lg py-3 px-5\">",
@@ -57,9 +56,9 @@
       "  />",
       "</div>"
     ],
-    "description": "Tailwind input search"
+    "description": "Display input search with TaiwindCSS"
   },
-  "Tailwind input search clear": {
+  "InputSearchClear": {
     "prefix": "tw-input-search-clear",
     "body": [
       "<div className=\"flex items-center gap-5 max-w-[350px] border border-gray-200 rounded-lg py-3 px-5\">",
@@ -102,10 +101,9 @@
       "  </span>",
       "</div>"
     ],
-    "description": "Tailwind input search clear"
+    "description": "Display input search clear with TaiwindCSS"
   },
-
-  "Tailwind form group": {
+  "FormGroup": {
     "prefix": "tw-form-group",
     "body": [
       "<div className=\"flex flex-col items-start gap-y-3\">",
@@ -120,7 +118,7 @@
       "  />",
       "</div>"
     ],
-    "description": "Tailwind form group"
+    "description": "Display form group with TaiwindCSS"
   },
   "Tailwind upload file": {
     "prefix": "tw-upload",
@@ -141,29 +139,27 @@
       "  <p>Select your files</p>",
       "</label>"
     ],
-    "description": "Tailwind upload file"
+    "description": "Display upload file with TaiwindCSS"
   },
-
-  // Button
-  "Tailwind button": {
+  "Button": {
     "prefix": "tw-button",
     "body": [
       "<button className=\"px-4 py-2 font-semibold text-white bg-blue-500 rounded-md\">",
       "  Button",
       "</button>"
     ],
-    "description": "Tailwind button"
+    "description": "Display button with TaiwindCSS"
   },
-  "Tailwind button outline": {
+  "ButtonOutline": {
     "prefix": "tw-button-outline",
     "body": [
       "<button className=\"px-5 py-[10px] font-semibold border-blue-500 border text-blue-500 rounded-md\">",
       "  Button",
       "</button>"
     ],
-    "description": "Tailwind button outline"
+    "description": "Display button outline with TaiwindCSS"
   },
-  "Tailwind button combination": {
+  "ButtonCombination": {
     "prefix": "tw-button-combination",
     "body": [
       "<div class=\"flex items-center gap-x-5\" aria-label=\"button-combination\">",
@@ -175,11 +171,9 @@
       "  </button>",
       "</div>"
     ],
-    "description": "Tailwind button combination"
+    "description": "Display button combination with TaiwindCSS"
   },
-
-  // Loading
-  "Tailwind loading skeleton": {
+  "LoadingSkeleton": {
     "prefix": "tw-skeleton",
     "body": [
       "<div",
@@ -187,17 +181,16 @@
       "  className=\"w-40 h-40 bg-slate-200 animate-pulse\"",
       "></div>"
     ],
-    "description": "Tailwind loading skeleton"
+    "description": "Display loading skeleton"
   },
-  "Tailwind loading circle": {
+  "LoadingCircle": {
     "prefix": "tw-loading-circle",
     "body": [
       "<div className=\"w-10 h-10 border-4 border-blue-500 rounded-full animate-spin border-t-transparent\"></div>"
     ],
-    "description": "Tailwind loading circle"
+    "description": "Display loading circle with TaiwindCSS"
   },
-
-  "Tailwind dropdown": {
+  "Dropdown": {
     "prefix": "tw-dropdown",
     "body": [
       "<div",
@@ -237,9 +230,9 @@
       "  </div>",
       "</div>"
     ],
-    "description": "Tailwind dropdown"
+    "description": "Display dropdown with TaiwindCSS"
   },
-  "Tailwind 5 stars": {
+  "FiveStars": {
     "prefix": "tw-five-stars",
     "body": [
       "<div className=\"flex items-center text-yellow-500\">",
@@ -258,9 +251,9 @@
       "    ))}",
       "</div>"
     ],
-    "description": "Tailwind 5 stars"
+    "description": "Display five stars with TaiwindCSS"
   },
-  "Tailwind modal": {
+  "Modal": {
     "prefix": "tw-modal",
     "body": [
       "<div",
@@ -293,9 +286,9 @@
       "  </div>",
       "</div>"
     ],
-    "description": "Tailwind modal"
+    "description": "Display modal with TaiwindCSS"
   },
-  "Tailwind textarea": {
+  "Textarea": {
     "prefix": "tw-textarea",
     "body": [
       "<textarea",
@@ -304,16 +297,16 @@
       "  placeholder=\"Enter description\"",
       "/>"
     ],
-    "description": "Tailwind textarea"
+    "description": "Display textarea with TaiwindCSS"
   },
-  "Tailwind overlay": {
+  "Overlay": {
     "prefix": "tw-overlay",
     "body": [
       "<div className={`${false && 'invisible opacity-0'} fixed inset-0 z-40 transition-all bg-black overlay bg-opacity-10`}></div>"
     ],
-    "description": "Tailwind overlay"
+    "description": "Display overlay with TaiwindCSS"
   },
-  "Tailwind input password toggle": {
+  "InputPasswordToggle": {
     "prefix": "tw-password-toggle",
     "body": [
       "<div className=\"max-w-[350px]\" aria-label=\"password\">",
@@ -363,6 +356,6 @@
       "  </div>",
       "</div>"
     ],
-    "description": "Tailwind input password toggle"
+    "description": "Display input password toggle with TaiwindCSS"
   }
 }

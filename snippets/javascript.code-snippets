@@ -1,0 +1,327 @@
+{
+  "QuickCopyToClipboard": {
+    "prefix": "clipboard-copy",
+    "body": ["navigator.clipboard?.writeText && navigator.clipboard.writeText($1);"],
+    "description": "Quick copy to clipboard"
+  },
+  "ReactArrayRenderingList": {
+    "prefix": "render-array-list",
+    "body": ["{Array($1).fill(0).map((item, index) => (", "<div key={index}>$2</div>", "))}"],
+    "description": "React array rendering list"
+  },
+  "DisplayTimeVN": {
+    "prefix": "format-date-vn",
+    "body": ["{new Date($1).toLocaleDateString(\"vi-VI\")}", "", ""],
+    "description": "Display time VN"
+  },
+  "ScrollToTop": {
+    "prefix": "scroll-to-top",
+    "body": ["document.body.scrollIntoView({ behavior: \"smooth\", block: \"start\" });"],
+    "description": "Scroll to top"
+  },
+  "ScrollToBottom": {
+    "prefix": "scroll-to-bottom",
+    "body": ["document.body.scrollIntoView({ behavior: \"smooth\", block: \"end\" });"],
+    "description": "Scroll to bottom"
+  },
+  "ReactPropTypes": {
+    "prefix": "react-proptypes",
+    "body": [
+      "import PropTypes from \"prop-types\";",
+      "$1.propTypes = {",
+      "  // value: PropTypes.string",
+      "}"
+    ],
+    "description": "Using PropTypes in React"
+  },
+  "ReactStyledComponents": {
+    "prefix": "react-styled-c",
+    "body": ["import styled from \"styled-components\";", ""],
+    "description": "Import styled-components in React"
+  },
+  "ReactHookForm": {
+    "prefix": "react-hook-form",
+    "body": [
+      "const {",
+      "  control,",
+      "  setValue,",
+      "  getValues,",
+      "  watch,",
+      "  formState: { isValid, isSubmitting, errors },",
+      "} = useForm({",
+      "  mode: \"onChange\",",
+      "  defaultValues: {},",
+      "});"
+    ],
+    "description": "Using react hook form in react"
+  },
+  "ConsoleLog": {
+    "prefix": "clg",
+    "body": ["console.log(${1})"],
+    "description": "Console log"
+  },
+  "SetInterval": {
+    "prefix": "set-interval",
+    "body": ["setInterval(() => { ${1} }, ${2})"],
+    "description": "setInterval(() => { }, intervalTime"
+  },
+  "SetTimeOut": {
+    "prefix": "set-timeout",
+    "body": ["setTimeout(() => { ${1} }, ${2})"],
+    "description": "setTimeout(() => { }, delayTime"
+  },
+  "QuerySelector": {
+    "prefix": "query-selector",
+    "body": ["document.querySelector('$1');"],
+    "description": "Query Selector"
+  },
+  "QuerySelectorAll": {
+    "prefix": "query-selector-all",
+    "body": ["document.querySelectorAll('$1');"],
+    "description": "Query Selector All"
+  },
+  "ClickAddEventListener": {
+    "prefix": "eclick",
+    "body": ["$1.addEventListener('click', function(){", " $2 ", "})"],
+    "description": "Click addEventListener"
+  },
+  "useEffectWithCleanUp": {
+    "prefix": "useEffectCleanupSnippet",
+    "body": [
+      "useEffect(() => {",
+      "  ${1}",
+      "  return () => {",
+      "    ${2}",
+      "  }",
+      "}, [${3}])",
+      ""
+    ],
+    "description": "useEffect With CleanUp"
+  },
+  "useEffect": {
+    "prefix": "useEffectSnippet",
+    "body": ["useEffect(() => {", "  ${1}", "}, [${2}])", ""],
+    "description": "useEffect"
+  },
+  "useCallback": {
+    "prefix": "useCallbackSnippet",
+    "body": ["useCallback(", "  () => {", "    $1", "  },", "  [$2],", ")", ""]
+  },
+  "useContext": {
+    "prefix": "useContextSnippet",
+    "body": ["const $1 = useContext($2)"]
+  },
+  "useLayoutEffect": {
+    "prefix": "useLayoutEffectSnippet",
+    "body": [
+      "useLayoutEffect(() => {",
+      "  $1",
+      "",
+      "  return () => {",
+      "    $2",
+      "  };",
+      "}, [${3}])"
+    ]
+  },
+  "useMemo": {
+    "prefix": "useMemoSnippet",
+    "body": ["useMemo(() => $1, [$2])"]
+  },
+  "useReducer": {
+    "prefix": "useReducerSnippet",
+    "body": ["const [state, dispatch] = useReducer($1, $2, ${3})"]
+  },
+  "useRef": {
+    "prefix": "useRefSnippet",
+    "body": ["const $1 = useRef($2)"]
+  },
+  "useState": {
+    "prefix": "useStateSnippet",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(${2})"]
+  },
+  "ExportInterface": {
+    "prefix": "expint",
+    "body": ["export interface $1 {$2}"]
+  },
+  "Create useAppContext": {
+    "prefix": "useAppContext",
+    "body": [
+      "import { createContext, useContext, useState } from \"react\";",
+      "",
+      "const AppContext = createContext();",
+      "",
+      "function AppProvider(props) {",
+      "  const [message, setMessage] = useState(\"This is App Context\");",
+      "  const value = [message, setMessage];",
+      "  return (",
+      "    <AppContext.Provider value={value} {...props}>{props.children}</AppContext.Provider>",
+      "  );",
+      "}",
+      "",
+      "function useAppContext() {",
+      "  const context = useContext(AppContext);",
+      "  if (typeof context === \"undefined\")",
+      "    throw new Error(\"useAppContext must be used within a AppProvider\");",
+      "  return context;",
+      "}",
+      "",
+      "export { AppProvider, useAppContext };"
+    ],
+    "description": "Create useAppContext"
+  },
+  "Classname styles module": {
+    "prefix": "class-styles",
+    "body": ["className={styles.$1}"],
+    "description": "Classname styles module"
+  },
+  "Import const styles module": {
+    "prefix": "styles-module",
+    "body": ["import styles from '$1'"],
+    "description": "Import const styles module"
+  },
+  "ArrowFunctionComponent": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component"
+  },
+  "ArrowFunctionExportComponent": {
+    "prefix": "rafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Export Component"
+  },
+  "ArrowFunctionStyledComponents": {
+    "prefix": "rafce-styled",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.div`",
+      "  $2",
+      "`",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <Styled${1:${TM_FILENAME_BASE}}>${1:${TM_FILENAME_BASE}}</Styled${1:${TM_FILENAME_BASE}}>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component Styled Components"
+  },
+  // new
+  "ArrowFunctionComponentWithPropTypes": {
+    "prefix": "rafcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = props => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE}}</div>",
+      "  )",
+      "}",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with PropTypes"
+  },
+  "FunctionalComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${1}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Functional Component"
+  },
+  "ConsoleLogJson": {
+    "prefix": "clj",
+    "body": ["console.log('${1:obj}', JSON.stringify(${1:obj}, null, 2))"],
+    "description": "Logs stringified JSON property with name."
+  },
+  "ImportAndExportList": {
+    "prefix": "idl",
+    "body": ["import ${1} from \"./${1}\";", "", "export { ${1} };"],
+    "description": "Import components to index file and export list"
+  },
+  "ImportAndExportDefault": {
+    "prefix": "ied",
+    "body": ["import ${1} from \"./${1}\";", "", "export default ${1};"],
+    "description": "Import component to index file and export default"
+  },
+  "ReduxSlice": {
+    "prefix": "redux-slice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "const initialState = {",
+      "",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = createSlice({",
+      "  name: ${2:${TM_FILENAME_BASE}},",
+      "  initialState,",
+      "  reducers: {}",
+      "});",
+      "",
+      "export const {} = ${1:${TM_FILENAME_BASE}}.actions",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}.reducer"
+    ]
+  },
+  "ForEach": {
+    "prefix": "for-each",
+    "body": ["${1}.forEach(${2} => {${3}})"],
+    "description": "Creates a forEach statement"
+  },
+  "ForOf": {
+    "prefix": "for-of",
+    "body": ["for(let ${1} of ${2}) {${3}}"],
+    "description": "Iterating over property names of iterable objects"
+  },
+  "ForIn": {
+    "prefix": "for-in",
+    "body": ["for(let ${1} in ${2}) {${3}}"],
+    "description": "Iterating over property values of iterable objects"
+  },
+  "DestructingObject": {
+    "prefix": "destructing-object",
+    "body": ["const {${2}} = ${1}"],
+    "description": "Creates and assigns a local variable using object destructing"
+  },
+  "DestructingArray": {
+    "prefix": "destructing-array",
+    "body": ["const [${2}] = ${1}"],
+    "description": "Creates and assigns a local variable using array destructing"
+  },
+  "Promise": {
+    "prefix": "promise",
+    "body": ["return new Promise((resolve, reject) => { ${1} })"],
+    "description": "Creates and returns a new Promise"
+  }
+}

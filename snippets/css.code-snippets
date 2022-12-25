@@ -1,15 +1,22 @@
 {
-  "Center with flexbox": {
+  "ImportPoppinsGGFonts": {
+    "prefix": "poppins-ggfonts",
+    "body": [
+      "<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); </style>"
+    ],
+    "description": "Import Poppins font family from Google Fonts"
+  },
+  "FlexJustifyAlignCenter": {
     "prefix": "flex-center",
     "body": ["display: flex;", "justify-content: center;", "align-items: center;", "$0"],
     "description": "Center with flexbox"
   },
-  "Center with grid": {
+  "CenterWithGrid": {
     "prefix": "grid-center",
     "body": ["display: grid;", "place-items: center;", "$0"],
     "description": "Center with grid"
   },
-  "Absolute center both direction": {
+  "AbsoluteCenterBothXY": {
     "prefix": "abs-center",
     "body": [
       "position: absolute;",
@@ -20,17 +27,17 @@
     ],
     "description": "Absolute center both direction"
   },
-  "Position absolute center X direction": {
+  "AbsoluteCenterX": {
     "prefix": "abs-center-x",
     "body": ["position: absolute;", "left: 50%;", "transform: translateX(-50%);", "$0"],
     "description": "Position absolute center X direction"
   },
-  "Position absolute center Y direction": {
+  "AbsoluteCenterY": {
     "prefix": "abs-center-y",
     "body": ["position: absolute;", "top: 50%;", "transform: translateY(-50%);", "$0"],
     "description": "Position absolute center Y direction"
   },
-  "Flexbox center column direction": {
+  "FlexCenterColumn": {
     "prefix": "flex-center-col",
     "body": [
       "display:flex;",
@@ -39,32 +46,19 @@
       "flex-direction:column;",
       "$0"
     ],
-    "description": "Flexbox center column direction"
+    "description": "Flex center column direction"
   },
-  "Flexbox column": {
+  "FlexColumn": {
     "prefix": "flex-col",
     "body": ["display: flex;", "flex-direction: column;", "$0"],
-    "description": "Flexbox column"
+    "description": "Flex column"
   },
-  "Flexbox center spacebetween": {
-    "prefix": "facb",
+  "FlexCenterSpaceBetween": {
+    "prefix": "flex-acb",
     "body": ["display:flex;", "justify-content: space-between;", "align-items: center;", "$0"],
-    "description": "Flexbox center spacebetween"
+    "description": "Flex center spacebetween"
   },
-  "Text line clamp": {
-    "prefix": "line-clamp",
-    "body": [
-      "display:-webkit-box;",
-      "-webkit-line-clamp:${1:1};",
-      "-webkit-box-orient: vertical;",
-      "overflow: hidden;",
-      "text-overflow: ellipsis;",
-      "word-break: break-word;",
-      "$0"
-    ],
-    "description": "Text line clamp"
-  },
-  "Text line clamp one line": {
+  "TextLineClampOneLine": {
     "prefix": "line-clamp-single",
     "body": [
       "white-space:nowrap;",
@@ -75,42 +69,55 @@
     ],
     "description": "Text line clamp one line"
   },
-  "CSS size": {
+  "TextLineClamp": {
+    "prefix": "line-clamp",
+    "body": [
+      "display:-webkit-box;",
+      "-webkit-line-clamp:${1:1};",
+      "-webkit-box-orient: vertical;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "word-break: break-word;",
+      "$0"
+    ],
+    "description": "Text line clamp multiple line"
+  },
+  "ShowElement": {
+    "prefix": "show-element",
+    "body": ["opacity: 1;", "visibility: visible;"],
+    "description": "Show element"
+  },
+  "HiddenElement": {
+    "prefix": "hidden-element",
+    "body": ["opacity: 0;", "visibility: hidden;", "transition: ${1:all 0.2s ease};$0"],
+    "description": "Hide element"
+  },
+  "QuickWidthHeight": {
     "prefix": "size",
     "body": ["width: $1;", "height: $2;"],
-    "description": "CSS size"
+    "description": "Quick CSS size"
   },
-  "CSS square": {
+  "CreateSquare": {
     "prefix": "square",
     "body": ["width: $1;", "height: $1;"],
-    "description": "CSS square"
+    "description": "Quick CSS square"
   },
-  "CSS square radius": {
-    "prefix": "square-radius",
-    "body": ["width: $1;", "height: $1;", "border-radius: $2;", "$3"],
-    "description": "CSS square radius"
-  },
-  "CSS circle": {
+  "CreateCircle": {
     "prefix": "circle",
     "body": ["width: $1;", "height: $1;", "border-radius: 50%;", "$2"],
-    "description": "CSS circle"
+    "description": "Quick CSS circle"
   },
-  "CSS image cover": {
-    "prefix": "img-cover",
-    "body": ["width: 100%;", "height: 100%;", "object-fit: cover;", "$0"],
-    "description": "CSS image cover"
-  },
-  "Media max width": {
+  "MediaMaxWidth": {
     "prefix": "@max-w",
     "body": ["@media screen and (max-width: $1){", "$2", "}"],
     "description": "Media max width"
   },
-  "Media min width": {
+  "MediaMinWidth": {
     "prefix": "@min-w",
     "body": ["@media screen and (min-width: $1){", "$2", "}"],
     "description": "Media min width"
   },
-  "CSS for placeholder": {
+  "StylesInputplaceholder": {
     "prefix": "input-placeholder",
     "body": [
       "$1::-webkit-input-placeholder{",
@@ -122,7 +129,7 @@
     ],
     "description": "CSS for placeholder"
   },
-  "Hide scrollbar": {
+  "HideScrollbar": {
     "prefix": "scrollbar-hidden",
     "body": [
       ".${1:yourclass} {",
@@ -135,7 +142,7 @@
     ],
     "description": "Hide scrollbar"
   },
-  "Scroll snap": {
+  "ScrollSnap": {
     "prefix": "grid-scroll-snap",
     "body": [
       ".${1:yourclass} {",
@@ -164,10 +171,10 @@
     ],
     "description": "Scroll snap"
   },
-  "Grid layout": {
+  "GridLayout": {
     "prefix": "grid-layout",
     "body": [
-      ".${1:your-class}{",
+      ".${1}{",
       "    --columns: 4;",
       "    --gap: 20px;",
       "    display: grid;",
@@ -177,67 +184,67 @@
     ],
     "description": "Grid layout"
   },
-  "Transition all": {
+  "TransitionAll": {
     "prefix": "transition-all",
     "body": ["transition: all 0.2s linear;", "$0"],
     "description": "Transition all"
   },
-  "Position absolute full": {
+  "AbsoluteFull": {
     "prefix": "abs-full",
     "body": ["position: absolute;", "top: 0;", "right: 0;", "bottom: 0;", "left: 0;", "$0"],
     "description": "Position absolute full"
   },
-  "Position fixed full": {
+  "PositionFixedFull": {
     "prefix": "fixed-full",
     "body": ["position: fixed;", "top: 0;", "right: 0;", "bottom: 0;", "left: 0;", "$0"],
     "description": "Position fixed full"
   },
-  "Position relative": {
+  "PositionRelative": {
     "prefix": "relative",
     "body": ["position: relative;", "$0"],
     "description": "Position relative"
   },
-  "Position absolute": {
+  "PositionAbsolute": {
     "prefix": "absolute",
     "body": ["position: absolute;", "$0"],
     "description": "Position absolute"
   },
-  "Position fixed": {
+  "PositionFixed": {
     "prefix": "fixed",
     "body": ["position: fixed;", "$0"],
     "description": "Position fixed"
   },
-  "Position sticky": {
+  "PositionSticky": {
     "prefix": "sticky",
     "body": ["position: sticky;", "$0"],
     "description": "Position sticky"
   },
-  "Display none": {
+  "DisplayNone": {
     "prefix": "dnone",
     "body": ["display: none;", "$0"],
     "description": "Display none"
   },
-  "Display block": {
+  "DisplayBlock": {
     "prefix": "dblock",
     "body": ["display: block;", "$0"],
     "description": "Display block"
   },
-  "Display inline block": {
+  "DisplayInlineBlock": {
     "prefix": "diblock",
     "body": ["display: inline-block;", "$0"],
     "description": "Display inline block"
   },
-  "Using css grid": {
+  "UsingCSSGrid": {
     "prefix": "use-grid",
     "body": ["display: grid;", "grid-template-columns: $1;", "grid-gap: $2;", "$3"],
     "description": "Using css grid"
   },
-  "Flexbox align center": {
+  "FlexAlignCenter": {
     "prefix": "facenter",
     "body": ["display: flex;", "align-items: center;", "$0"],
-    "description": "Flexbox align center"
+    "description": "Flex align center"
   },
-  "Custom scrollbar": {
+  "CustomStylesScrollbar": {
     "prefix": "custom-scrollbar",
     "body": [
       "$1::-webkit-scrollbar {",
@@ -252,343 +259,354 @@
     ],
     "description": "Custom scrollbar"
   },
-  "Width full": {
+  "WidthFull": {
     "prefix": "wfull",
     "body": ["width: 100%;", "$0"],
     "description": "Width full"
   },
-  "Height full": {
+  "HeightFull": {
     "prefix": "hfull",
     "body": ["height: 100%;", "$0"],
     "description": "Height full"
   },
-  "Size full": {
+  "SizeWidthHeightFull": {
     "prefix": "size-full",
     "body": ["height: 100%;", "width: 100%;", "$0"],
     "description": "Size full"
   },
-  "Overflow hidden": {
+  "OverflowHidden": {
     "prefix": "overflow-hidden",
     "body": ["overflow: hidden;", "$0"],
     "description": "Overflow hidden"
   },
-  "Overflow x hidden": {
+  "OverflowXHidden": {
     "prefix": "overflow-x-hidden",
     "body": ["overflow-x: hidden;", "$0"],
     "description": "Overflow x hidden"
   },
-  "Overflow y hidden": {
+  "OverflowYHidden": {
     "prefix": "overflow-y-hidden",
     "body": ["overflow-y: hidden;", "$0"],
     "description": "Overflow y hidden"
   },
-  "Overflow x auto": {
+  "OverflowXAuto": {
     "prefix": "overflow-x-auto",
     "body": ["overflow-x: auto;", "$0"],
     "description": "Overflow x auto"
   },
-  "Overflow y auto": {
+  "OverflowYAuto": {
     "prefix": "overflow-y-auto",
     "body": ["overflow-y: auto;", "$0"],
     "description": "Overflow y auto"
   },
-  "Text uppercase": {
+  "TextUppercase": {
     "prefix": "uppercase",
     "body": ["text-transform: uppercase;", "$0"],
     "description": "Text uppercase"
   },
-  "Text capitalize": {
+  "TextCapitalize": {
     "prefix": "capitalize",
     "body": ["text-transform: capitalize;", "$0"],
     "description": "Text capitalize"
   },
-  "Text lowercase": {
+  "TextLowercase": {
     "prefix": "lowercase",
     "body": ["text-transform: lowercase;", "$0"],
     "description": "Text lowercase"
   },
-  "Font weight light": {
+  "FontWeightLight": {
     "prefix": "font-light",
     "body": ["font-weight: 300;", "$0"],
     "description": "Font weight light"
   },
-  "Font weight normal": {
+  "FontWeightNormal": {
     "prefix": "font-normal",
     "body": ["font-weight: 400;", "$0"],
     "description": "Font weight normal"
   },
-  "Font weight medium": {
+  "FontWeightMedium": {
     "prefix": "font-medium",
     "body": ["font-weight: 500;", "$0"],
     "description": "Font weight medium"
   },
-  "Font weight semibold": {
+  "FontWeightSemibold": {
     "prefix": "font-semibold",
     "body": ["font-weight: 600;", "$0"],
     "description": "Font weight semibold"
   },
-  "Font weight bold": {
+  "FontWeightBold": {
     "prefix": "font-bold",
     "body": ["font-weight: 700;", "$0"],
     "description": "Font weight bold"
   },
-  "Font weight extrabold": {
+  "FontWeightExtrabold": {
     "prefix": "font-extrabold",
     "body": ["font-weight: 800;", "$0"],
     "description": "Font weight extrabold"
   },
-  "Font style itatlic": {
+  "FontItatlic": {
     "prefix": "italic",
     "body": ["font-style: italic;", "$0"],
     "description": "Font style itatlic"
   },
-  "Under pc": {
+  "MediaUnderPC": {
     "prefix": "@1023",
     "body": ["@media screen and (max-width: 1023.98px) {", "$0", "}", ""],
     "description": "Under pc"
   },
-  "Under tablet": {
+  "MediaUnderTablet": {
     "prefix": "@767",
     "body": ["@media screen and (max-width: 767.98px) {", "$0", "}", ""],
     "description": "Under tablet"
   },
-  "Smallest screen": {
+  "SmallestScreen": {
     "prefix": "@374",
     "body": ["@media screen and (max-width: 374.98px) {", "$0", "}", ""],
     "description": "Smallest screen"
   },
-  "Above Smallest screen": {
+  "AboveSmallestScreen": {
     "prefix": "@375",
     "body": ["@media screen and (min-width: 375px) {", "$0", "}", ""],
     "description": "Above Smallest screen"
   },
-  "Above mobile": {
+  "AboveMobile": {
     "prefix": "@768",
     "body": ["@media screen and (min-width: 768px) {", "$0", "}", ""],
     "description": "Above mobile"
   },
-  "Above tablet": {
+  "AboveTablet": {
     "prefix": "@1024",
     "body": ["@media screen and (min-width: 1024px) {", "$0", "}", ""],
     "description": "Above tablet"
   },
-  "Above small pc": {
+  "AboveSmallPC": {
     "prefix": "@1280",
     "body": ["@media screen and (min-width: 1280px) {", "$0", "}", ""],
     "description": "Above small pc"
   },
-  "Below small pc": {
+  "BelowSmallPC": {
     "prefix": "@1279",
     "body": ["@media screen and (max-width: 1279.98px) {", "$0", "}", ""],
     "description": "Below small pc"
   },
-  "CSS fast shadow 1": {
+  "QuickBoxShadow1": {
     "prefix": "get-shadow1",
     "body": ["box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;", "$0"],
-    "description": "CSS fast shadow 1"
+    "description": "Quick box shadow 1"
   },
-  "CSS fast shadow 2": {
+  "QuickBoxShadow2": {
     "prefix": "get-shadow2",
     "body": ["box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;", "$0"],
-    "description": "CSS fast shadow 2"
+    "description": "Quick box shadow 2"
   },
-  "CSS fast shadow 3": {
+  "QuickBoxShadow3": {
     "prefix": "get-shadow3",
     "body": ["box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;", "$0"],
-    "description": "CSS fast shadow 3"
+    "description": "Quick box shadow 3"
   },
-  "CSS fast shadow 4": {
+  "QuickBoxShadow4": {
     "prefix": "get-shadow4",
     "body": ["box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;", "$0"],
-    "description": "CSS fast shadow 4"
+    "description": "Quick box shadow 4"
   },
-  "CSS fast shadow 5": {
+  "QuickBoxShadow5": {
     "prefix": "get-shadow5",
     "body": ["box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;", "$0"],
-    "description": "CSS fast shadow 5"
+    "description": "Quick box shadow 5"
   },
-  "CSS fast gradient purple": {
+  "QuickGradientPurple": {
     "prefix": "gradient-purple",
-    "body": ["background-image: linear-gradient(270deg,#c042ff,#8a3cff);", "$0"],
-    "description": "CSS fast gradient purple"
+    "body": ["linear-gradient(270deg,#c042ff,#8a3cff);", "$0"],
+    "description": "Quick gradient purple"
   },
-  "CSS fast gradient orange": {
+  "QuickGradientOrange": {
     "prefix": "gradient-orange",
-    "body": ["background-image: linear-gradient(to right top,#fc6c8f,#ffb86c);", "$0"],
-    "description": "CSS fast gradient orange"
+    "body": ["linear-gradient(to right top,#fc6c8f,#ffb86c);", "$0"],
+    "description": "Quick gradient orange"
   },
-  "CSS fast gradient green": {
+  "QuickGradientGreen": {
     "prefix": "gradient-green",
-    "body": ["background-image: linear-gradient(to right, #1ABCF4, #5DEFB8);", "$0"],
-    "description": "CSS fast gradient green"
+    "body": ["linear-gradient(to right, #1ABCF4, #5DEFB8);", "$0"],
+    "description": "Quick gradient green"
   },
-  "CSS fast gradient pink": {
+  "QuickGradientPink": {
     "prefix": "gradient-pink",
-    "body": ["background-image: linear-gradient(45deg, #fc6c8f, #ff2ced);", "$0"],
-    "description": "CSS fast gradient pink"
+    "body": ["linear-gradient(45deg, #fc6c8f, #ff2ced);", "$0"],
+    "description": "Quick gradient pink"
   },
-  "Quick color purple": {
+  "QuickColorPurple": {
     "prefix": "c-purple",
     "body": ["#6A5AF9"],
     "description": "Quick color purple"
   },
-  "Quick color blue": {
+  "QuickColorBlue": {
     "prefix": "c-blue",
-    "body": ["#2cccff"],
+    "body": ["#2979FF"],
     "description": "Quick color blue"
   },
-  "Quick color green": {
+  "QuickColorGreen": {
     "prefix": "c-green",
     "body": ["#20E3B2"],
     "description": "Quick color green"
   },
-  "Quick color orange": {
+  "QuickColorOrange": {
     "prefix": "c-orange",
     "body": ["#FF6651"],
     "description": "Quick color orange"
   },
-  "Quick color pink": {
+  "QuickColorPink": {
     "prefix": "c-pink",
     "body": ["#F62682"],
     "description": "Quick color pink"
   },
-  "Quick color gray": {
+  "QuickColorGray": {
     "prefix": "c-gray",
-    "body": ["#eee"],
+    "body": ["#DDD"],
     "description": "Quick color gray"
   },
-  "Rounded full": {
+  "BackgroundLinearGradient": {
+    "prefix": "linear-gradient",
+    "body": ["background-image: linear-gradient(${1: to right}, $2, $3);"],
+    "description": "Background linear gradient"
+  },
+  "TextGradient": {
+    "prefix": "text-gradient",
+    "body": [
+      "color: transparent;",
+      "background-clip: text;",
+      "-webkit-background-clip: text;",
+      "background-image: ${1}",
+      "$2"
+    ],
+    "description": "Styles text gradient"
+  },
+  "RoundedFull": {
     "prefix": "rounded-full",
     "body": ["border-radius: 50%;", "$0"],
     "description": "Rounded full"
   },
-  "Line height calc": {
-    "prefix": "leading-calc",
-    "body": ["line-height: calc($1 / $2);", "$0"],
-    "description": "Line height calc"
-  },
-  "Line height none": {
-    "prefix": "leading-none",
-    "body": ["line-height: 1;", "$0"],
-    "description": "Line height none"
-  },
-  "Text center": {
+  "TextCenter": {
     "prefix": "text-center",
     "body": ["text-align: center;", "$0"],
     "description": "Text center"
   },
-  "Text right": {
+  "TextRight": {
     "prefix": "text-right",
     "body": ["text-align: right;", "$0"],
     "description": "Text right"
   },
-  "Text justify": {
+  "TextJustify": {
     "prefix": "text-justify",
     "body": ["text-align: justify;", "$0"],
     "description": "Text justify"
   },
-  "Text left": {
+  "TextLeft": {
     "prefix": "text-left",
     "body": ["text-align: left;", "$0"],
     "description": "Text left"
   },
-  "Cursor pointer": {
+  "CursorPointer": {
     "prefix": "cursor-pointer",
     "body": ["cursor: pointer;", "$0"],
     "description": "Cursor pointer"
   },
-  "Cursor not allowed": {
+  "CursorNotAllowed": {
     "prefix": "cursor-not-allowed",
     "body": ["cursor: not-allowed;", "$0"],
     "description": "Cursor not allowed"
   },
-  "Pointer events none": {
+  "PointerEventsNone": {
     "prefix": "pointer-none",
     "body": ["pointer-events: none;", "$0"],
     "description": "Pointer events none"
   },
-  "Outline none": {
+  "OutlineNone": {
     "prefix": "outline-none",
     "body": ["outline: none;", "$0"],
     "description": "Outline none"
   },
-  "Border none": {
+  "Inset0": {
+    "prefix": "inset0",
+    "body": ["inset: 0;", "$0"],
+    "description": "Position full width, height and top 0, left 0"
+  },
+  "BorderNone": {
     "prefix": "border-none",
     "body": ["border: none;", "$0"],
     "description": "Border none"
   },
-  "Flex shrink 0": {
+  "BorderThin": {
+    "prefix": "border-Thin",
+    "body": ["border: 1px solid ${1:#DDD};$0", ""],
+    "description": "Border thin"
+  },
+  "FlexShrink0": {
     "prefix": "shrink-0",
     "body": ["flex-shrink: 0;", "$0"],
     "description": "Flex shrink 0"
   },
-  "Margin x auto": {
+  "MarginXAuto": {
     "prefix": "mx-auto",
     "body": ["margin-left: auto;", "margin-right: auto;", "$0"],
     "description": "Margin x auto"
   },
-  "Width max content": {
+  "WidthMaxContent": {
     "prefix": "w-max",
     "body": ["width: max-content;", "$0"],
     "description": "Width max content"
   },
-  "Width min content": {
+  "WidthMinContent": {
     "prefix": "w-min",
     "body": ["width: min-content;", "$0"],
     "description": "Width min content"
   },
-  "Width fit content": {
+  "WidthFitContent": {
     "prefix": "w-fit",
     "body": ["width: fit-content;", "$0"],
     "description": "Width fit content"
   },
-  "Object fit cover": {
+  "ObjectFitCover": {
     "prefix": "object-cover",
     "body": ["object-fit: cover;", "$0"],
     "description": "Object fit cover"
   },
-  "Object fit contain": {
+  "ObjectFitContain": {
     "prefix": "object-contain",
     "body": ["object-fit: contain;", "$0"],
     "description": "Object fit contain"
   },
-  "Object fit fill": {
+  "ObjectFitFill": {
     "prefix": "object-fill",
     "body": ["object-fit: fill;", "$0"],
     "description": "Object fit fill"
   },
-  "Background cover": {
-    "prefix": "bg-cover",
-    "body": ["background-size: cover;", "$0"],
-    "description": "Background cover"
-  },
-  "Break all": {
+  "BreakAll": {
     "prefix": "break-all",
     "body": ["word-break: break-all;", "$0"],
     "description": "Break all"
   },
-  "Break word": {
+  "BreakWord": {
     "prefix": "break-word",
     "body": ["word-break: break-word;", "$0"],
     "description": "Break word"
   },
-  "Aspect ratio video": {
+  "AspectRatioVideo": {
     "prefix": "aspect-video",
     "body": ["aspect-ratio: 16/9", "$0"],
     "description": "Aspect ratio 16/9"
   },
-  "Aspect ratio square": {
+  "AspectRatioSquare": {
     "prefix": "aspect-square",
     "body": ["aspect-ratio: 1/1;", "$0"],
     "description": "Aspect ratio square"
   },
-  "Aspect ratio custom": {
+  "AspectRatioCustom": {
     "prefix": "aspect-custom",
     "body": ["aspect-ratio: $1/$2", "$3"],
     "description": "Aspect ratio custom"
   },
-  "CSS reset": {
-    "prefix": "css-reset",
+  "SimpleResetCSS": {
+    "prefix": "reset-css",
     "body": [
       "*,",
       "*::before,",
@@ -599,7 +617,6 @@
       "  margin: 0;",
       "  padding: 0;",
       "}",
-      "",
       "html,",
       "body {",
       "  height: 100%;",
@@ -607,7 +624,6 @@
       "body {",
       "  line-height: 1.5;",
       "}",
-      "",
       "img,",
       "picture,",
       "video,",
@@ -634,6 +650,46 @@
       "}",
       "$0"
     ],
-    "description": "CSS reset"
+    "description": "Simple Reset CSS"
+  },
+  "HeightScreen": {
+    "prefix": "h-screen",
+    "body": ["height: 100vh;", "$0"],
+    "description": "Height screen"
+  },
+  "MinHeightScreen": {
+    "prefix": "min-h-screen",
+    "body": ["min-height: 100vh;", "$0"],
+    "description": "Min height screen"
+  },
+  "WidthScreen": {
+    "prefix": "w-screen",
+    "body": ["width: 100vw;", "$0"],
+    "description": "Width screen"
+  },
+  "MinWidthScreen": {
+    "prefix": "w-screen",
+    "body": ["min-width: 100vw;", "$0"],
+    "description": "Min width screen"
+  },
+  "BackgroundSizeCover": {
+    "prefix": "bg-cover",
+    "body": ["background-size: cover;", "$0"],
+    "description": "Background cover"
+  },
+  "BackgroundContain": {
+    "prefix": "bg-contain",
+    "body": ["background-size: contain;", "$0"],
+    "description": "Background contain"
+  },
+  "BackgroundRepeat": {
+    "prefix": "bg-repeat",
+    "body": ["background-repeat: repeat;", "$0"],
+    "description": "Background repeat"
+  },
+  "BackgroundNoRepeat": {
+    "prefix": "bg-no-repeat",
+    "body": ["background-repeat: no-repeat;", "$0"],
+    "description": "Background norepeat"
   }
 }

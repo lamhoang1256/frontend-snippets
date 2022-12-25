@@ -1,11 +1,25 @@
 {
-  "Define props component typescript": {
-    "prefix": "rafce-iprops",
-    "body": ["interface ${1:${TM_FILENAME_BASE}}Props {", "  $2", "}"],
-    "description": "Define props component typescript"
+  "ArrowFunctionExportComponentInterface": {
+    "prefix": "tsrafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  $2",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: ${1:${TM_FILENAME_BASE}}Props) => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component and TypeScript interface"
   },
-  "Arrow Function Component Children Props Typescript": {
-    "prefix": "rafce-ichildren",
+  "ArrowFunctionExportComponentChildrenInterface": {
+    "prefix": "tsrafce-children",
     "body": [
       "import React from 'react'",
       "",
@@ -15,16 +29,16 @@
       "",
       "const ${1:${TM_FILENAME_BASE}} = ({children}: ${1:${TM_FILENAME_BASE}}Props) => {",
       "  return (",
-      "    <div>{children}</div>",
+      "    <div>{${1:chidren}}</div>",
       "  )",
       "}",
       "",
       "export default ${1:${TM_FILENAME_BASE}}"
     ],
-    "description": "Arrow Function Component Children Props Typescript"
+    "description": "Creates a React Arrow Function Component Children props and TypeScript interface"
   },
-  "Arrow Function Component Styled Components Typescript": {
-    "prefix": "rafce-ts-styled",
+  "ArrowFunctionExportStyledComponentsInterface": {
+    "prefix": "tsrafce-styled",
     "body": [
       "import styled from 'styled-components'",
       "",
@@ -44,6 +58,24 @@
       "",
       "export default ${1:${TM_FILENAME_BASE}}"
     ],
-    "description": "Arrow Function Component Styled Components Typescript"
+    "description": "Creates a React Arrow Function Component with Styled Components and Typescript interface"
+  },
+  "ArrowFunctionComponentInterface": {
+    "prefix": "tsrafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
+      "  $2",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: ${1:${TM_FILENAME_BASE}}Props) => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE}}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component and TypeScript interface"
   }
 }
