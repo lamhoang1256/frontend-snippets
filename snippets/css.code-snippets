@@ -4,12 +4,12 @@
     "body": [
       "<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); </style>"
     ],
-    "description": "Import Poppins font family from Google Fonts"
+    "description": "Import Poppins font family from Google Fonts in file CSS"
   },
   "FlexJustifyAlignCenter": {
     "prefix": "flex-center",
     "body": ["display: flex;", "justify-content: center;", "align-items: center;", "$0"],
-    "description": "Center with flexbox"
+    "description": "Flex align center and justify center"
   },
   "CenterWithGrid": {
     "prefix": "grid-center",
@@ -46,17 +46,17 @@
       "flex-direction:column;",
       "$0"
     ],
-    "description": "Flex center column direction"
+    "description": "Flex align center and justify center column direction"
   },
   "FlexColumn": {
     "prefix": "flex-col",
     "body": ["display: flex;", "flex-direction: column;", "$0"],
-    "description": "Flex column"
+    "description": "Flex column direction"
   },
   "FlexCenterSpaceBetween": {
-    "prefix": "flex-acb",
+    "prefix": "facb",
     "body": ["display:flex;", "justify-content: space-between;", "align-items: center;", "$0"],
-    "description": "Flex center spacebetween"
+    "description": "Flex align center and justify spacebetween"
   },
   "TextLineClampOneLine": {
     "prefix": "line-clamp-single",
@@ -89,23 +89,23 @@
   },
   "HiddenElement": {
     "prefix": "hidden-element",
-    "body": ["opacity: 0;", "visibility: hidden;", "transition: ${1:all 0.2s ease};$0"],
+    "body": ["opacity: 0;", "visibility: hidden;", "transition: ${1:all 0.25s ease};$0"],
     "description": "Hide element"
   },
   "QuickWidthHeight": {
     "prefix": "size",
     "body": ["width: $1;", "height: $2;"],
-    "description": "Quick CSS size"
+    "description": "Set width then set height"
   },
   "CreateSquare": {
     "prefix": "square",
     "body": ["width: $1;", "height: $1;"],
-    "description": "Quick CSS square"
+    "description": "Set width and set height equally (square)"
   },
   "CreateCircle": {
     "prefix": "circle",
     "body": ["width: $1;", "height: $1;", "border-radius: 50%;", "$2"],
-    "description": "Quick CSS circle"
+    "description": "Set width and set height equally, radius = 50% (circle)"
   },
   "MediaMaxWidth": {
     "prefix": "@max-w",
@@ -186,7 +186,7 @@
   },
   "TransitionAll": {
     "prefix": "transition-all",
-    "body": ["transition: all 0.2s linear;", "$0"],
+    "body": ["transition: all 0.25s linear;", "$0"],
     "description": "Transition all"
   },
   "AbsoluteFull": {
@@ -257,22 +257,22 @@
       "  background-color: darkgrey;",
       "}"
     ],
-    "description": "Custom scrollbar"
+    "description": "Custom styles scrollbar"
   },
   "WidthFull": {
     "prefix": "wfull",
     "body": ["width: 100%;", "$0"],
-    "description": "Width full"
+    "description": "Set width: 100%"
   },
   "HeightFull": {
     "prefix": "hfull",
     "body": ["height: 100%;", "$0"],
-    "description": "Height full"
+    "description": "Set height: 100%"
   },
   "SizeWidthHeightFull": {
     "prefix": "size-full",
     "body": ["height: 100%;", "width: 100%;", "$0"],
-    "description": "Size full"
+    "description": "Set width and set height equal to 100%"
   },
   "OverflowHidden": {
     "prefix": "overflow-hidden",
@@ -347,47 +347,47 @@
   "FontItatlic": {
     "prefix": "italic",
     "body": ["font-style: italic;", "$0"],
-    "description": "Font style itatlic"
+    "description": "Font style italic"
   },
   "MediaUnderPC": {
     "prefix": "@1023",
     "body": ["@media screen and (max-width: 1023.98px) {", "$0", "}", ""],
-    "description": "Under pc"
+    "description": "Responsive media under pc"
   },
   "MediaUnderTablet": {
     "prefix": "@767",
     "body": ["@media screen and (max-width: 767.98px) {", "$0", "}", ""],
-    "description": "Under tablet"
+    "description": "Responsive media under tablet"
   },
   "SmallestScreen": {
     "prefix": "@374",
     "body": ["@media screen and (max-width: 374.98px) {", "$0", "}", ""],
-    "description": "Smallest screen"
+    "description": "Responsive media smallest screen"
   },
   "AboveSmallestScreen": {
     "prefix": "@375",
     "body": ["@media screen and (min-width: 375px) {", "$0", "}", ""],
-    "description": "Above Smallest screen"
+    "description": "Responsive media above smallest screen"
   },
   "AboveMobile": {
     "prefix": "@768",
     "body": ["@media screen and (min-width: 768px) {", "$0", "}", ""],
-    "description": "Above mobile"
+    "description": "Responsive media above mobile"
   },
   "AboveTablet": {
     "prefix": "@1024",
     "body": ["@media screen and (min-width: 1024px) {", "$0", "}", ""],
-    "description": "Above tablet"
+    "description": "Responsive media above tablet"
   },
   "AboveSmallPC": {
     "prefix": "@1280",
     "body": ["@media screen and (min-width: 1280px) {", "$0", "}", ""],
-    "description": "Above small pc"
+    "description": "Responsive media above small pc"
   },
   "BelowSmallPC": {
     "prefix": "@1279",
     "body": ["@media screen and (max-width: 1279.98px) {", "$0", "}", ""],
-    "description": "Below small pc"
+    "description": "Responsive media below small pc"
   },
   "QuickBoxShadow1": {
     "prefix": "get-shadow1",
@@ -536,7 +536,7 @@
     "description": "Border none"
   },
   "BorderThin": {
-    "prefix": "border-Thin",
+    "prefix": "border-thin",
     "body": ["border: 1px solid ${1:#DDD};$0", ""],
     "description": "Border thin"
   },
@@ -650,27 +650,27 @@
       "}",
       "$0"
     ],
-    "description": "Simple Reset CSS"
+    "description": "Simple reset CSS"
   },
   "HeightScreen": {
     "prefix": "h-screen",
     "body": ["height: 100vh;", "$0"],
-    "description": "Height screen"
+    "description": "Height 100vh"
   },
   "MinHeightScreen": {
     "prefix": "min-h-screen",
     "body": ["min-height: 100vh;", "$0"],
-    "description": "Min height screen"
+    "description": "Min height 100vh"
   },
   "WidthScreen": {
     "prefix": "w-screen",
     "body": ["width: 100vw;", "$0"],
-    "description": "Width screen"
+    "description": "Width 100vw"
   },
   "MinWidthScreen": {
     "prefix": "w-screen",
     "body": ["min-width: 100vw;", "$0"],
-    "description": "Min width screen"
+    "description": "Min width 100vw"
   },
   "BackgroundSizeCover": {
     "prefix": "bg-cover",
