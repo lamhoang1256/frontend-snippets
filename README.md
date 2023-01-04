@@ -15,6 +15,7 @@ My useful snippets for Frontend Developers
 | Prefix               | Description                                              |
 | -------------------- | -------------------------------------------------------- |
 | `poppins-ggfonts`    | Import Poppins font family from Google Fonts in file CSS |
+| `container`          | Using container wrapper                                  |
 | `wfull`              | Set width: 100%                                          |
 | `hfull`              | Set height: 100%                                         |
 | `size`               | Set width then set height                                |
@@ -24,6 +25,7 @@ My useful snippets for Frontend Developers
 | `abs-center`         | Absolute center both direction                           |
 | `abs-center-x`       | Position absolute center X direction                     |
 | `abs-center-y`       | Position absolute center Y direction                     |
+| `inset0`             | Full width, height and top, right, bottom, left = 0      |
 | `flex-col`           | Flex column direction                                    |
 | `facenter`           | Flex align center                                        |
 | `flex-center-col`    | Flex align center and justify center column direction    |
@@ -33,13 +35,13 @@ My useful snippets for Frontend Developers
 | `line-clamp`         | Text line clamp multiple line                            |
 | `show-element`       | Show element                                             |
 | `hidden-element`     | Hide element                                             |
-| `@max-w`             | Media max width                                          |
-| `@min-w`             | Media min width                                          |
 | `input-placeholder`  | CSS for placeholder                                      |
 | `scrollbar-hidden`   | Hide scrollbar                                           |
-| `grid-center`        | Center with grid                                         |
-| `grid-scroll-snap`   | Scroll snap                                              |
-| `grid-layout`        | Grid layout                                              |
+| `scrollbar-custom`   | Custom styles scrollbar                                  |
+| `use-grid`           | Using css grid                                           |
+| `grid-center`        | Display grid and place-items center                      |
+| `grid-scroll-snap`   | Using grid scroll-snap                                   |
+| `grid-template`      | Using grid-template-columns                              |
 | `transition-all`     | Transition all 0.25s linear                              |
 | `abs-full`           | Position absolute full                                   |
 | `fixed-full`         | Position fixed full                                      |
@@ -47,11 +49,10 @@ My useful snippets for Frontend Developers
 | `absolute`           | Position absolute                                        |
 | `fixed`              | Position fixed                                           |
 | `sticky`             | Position sticky                                          |
+| `dflex`              | Display flex                                             |
 | `dnone`              | Display none                                             |
 | `dblock`             | Display block                                            |
 | `diblock`            | Display inline block                                     |
-| `use-grid`           | Using css grid                                           |
-| `custom-scrollbar`   | Custom styles scrollbar                                  |
 | `overflow-hidden`    | Overflow hidden                                          |
 | `overflow-x-hidden`  | Overflow x hidden                                        |
 | `overflow-y-hidden`  | Overflow y hidden                                        |
@@ -67,6 +68,8 @@ My useful snippets for Frontend Developers
 | `font-semibold`      | Font weight semibold (600)                               |
 | `font-bold`          | Font weight bold (700)                                   |
 | `font-extrabold`     | Font weight extrabold (800)                              |
+| `@max-w`             | Media max width                                          |
+| `@min-w`             | Media min width                                          |
 | `@1023`              | Responsive media under pc                                |
 | `@767`               | Responsive media under table                             |
 | `@374`               | Responsive media smallest screen                         |
@@ -78,7 +81,6 @@ My useful snippets for Frontend Developers
 | `get-shadow1->5`     | 5 types of box-shadow from getcssscan                    |
 | `linear-gradient`    | Background linear gradient                               |
 | `text-gradient`      | Styles text gradient                                     |
-| `rounded-full`       | Rounded full                                             |
 | `text-center`        | Text center                                              |
 | `text-right`         | Text right                                               |
 | `text-justify`       | Text justify                                             |
@@ -87,9 +89,9 @@ My useful snippets for Frontend Developers
 | `cursor-not-allowed` | Cursor not allowed                                       |
 | `pointer-none`       | Pointer events none                                      |
 | `outline-none`       | Outline none                                             |
-| `inset0`             | Position full width, height and top 0, left 0            |
 | `border-none`        | Border none                                              |
 | `border-thin`        | Border: 1px solid #ddd                                   |
+| `rounded-full`       | Border radius 9999px (circle)                            |
 | `shrink-0`           | Flex shrink 0                                            |
 | `mx-auto`            | Margin x auto                                            |
 | `w-max`              | Width max content                                        |
@@ -169,15 +171,15 @@ My useful snippets for Frontend Developers
 | `useRefSnippet`           | Using useRef React hook                           |
 | `useStateSnippet`         | Using useState React hook                         |
 | `clj`                     | Logs stringified JSON property with name          |
-| `idl`                     | Import components to index file and export list   |
+| `iel`                     | Import components to index file and export list   |
 | `ied`                     | Import component to index file and export default |
 | `redux-slice`             | Create a slice redux                              |
 | `for-each`                | Create a forEach loop                             |
 | `for-of`                  | Create a for of loop                              |
 | `for-in`                  | Create a for in loop                              |
-| `destructing-object`      | Declare variable using object destructing         |
-| `destructing-array`       | Declare variable using array destructing          |
-| `promise`                 | Creates and returns a new Promise                 |
+| `destructing-object`      | Declare variables using object destructing        |
+| `destructing-array`       | Declare variables using array destructing         |
+| `promise`                 | Create and return a new Promise                   |
 
 ## ![typescript](https://images.weserv.nl/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FPKief%2Fvscode-material-icon-theme%40main%2Ficons%2Ftypescript.svg&w=25&h=25) Table of Typescript snippets
 

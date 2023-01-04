@@ -2,9 +2,21 @@
   "ImportPoppinsGGFonts": {
     "prefix": "poppins-ggfonts",
     "body": [
-      "<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); </style>"
+      "@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');"
     ],
     "description": "Import Poppins font family from Google Fonts in file CSS"
+  },
+  "ContainerWrapper": {
+    "prefix": "container",
+    "body": [
+      "width: 100%;",
+      "max-width: ${1:1200}px;",
+      "padding: 0 15px;",
+      "margin-left: auto;",
+      "margin-right: auto;",
+      "$2"
+    ],
+    "description": "Using container wrapper"
   },
   "FlexJustifyAlignCenter": {
     "prefix": "flex-center",
@@ -14,7 +26,7 @@
   "CenterWithGrid": {
     "prefix": "grid-center",
     "body": ["display: grid;", "place-items: center;", "$0"],
-    "description": "Center with grid"
+    "description": "Display grid and place-items center"
   },
   "AbsoluteCenterBothXY": {
     "prefix": "abs-center",
@@ -172,7 +184,7 @@
     "description": "Scroll snap"
   },
   "GridLayout": {
-    "prefix": "grid-layout",
+    "prefix": "grid-template",
     "body": [
       ".${1}{",
       "    --columns: 4;",
@@ -219,6 +231,11 @@
     "body": ["position: sticky;", "$0"],
     "description": "Position sticky"
   },
+  "DisplayFlex": {
+    "prefix": "dflex",
+    "body": ["display: flex;", "$0"],
+    "description": "Display flex"
+  },
   "DisplayNone": {
     "prefix": "dnone",
     "body": ["display: none;", "$0"],
@@ -245,7 +262,7 @@
     "description": "Flex align center"
   },
   "CustomStylesScrollbar": {
-    "prefix": "custom-scrollbar",
+    "prefix": "scrollbar-custom",
     "body": [
       "$1::-webkit-scrollbar {",
       "  width: 1em;",
@@ -482,8 +499,8 @@
   },
   "RoundedFull": {
     "prefix": "rounded-full",
-    "body": ["border-radius: 50%;", "$0"],
-    "description": "Rounded full"
+    "body": ["border-radius: 9999px;", "$0"],
+    "description": "Border radius 9999px (circle)"
   },
   "TextCenter": {
     "prefix": "text-center",

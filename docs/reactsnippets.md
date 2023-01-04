@@ -88,7 +88,7 @@ interface FileNameProps {
 }
 
 const FileName = ({ children }: FileNameProps) => {
-  return <div>{FileName}</div>;
+  return <div>{children}</div>;
 };
 
 export default FileName;

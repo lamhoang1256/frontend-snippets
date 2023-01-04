@@ -265,7 +265,7 @@
     "description": "Logs stringified JSON property with name"
   },
   "ImportAndExportList": {
-    "prefix": "idl",
+    "prefix": "iel",
     "body": ["import ${1} from \"./${1}\";", "", "export { ${1} };"],
     "description": "Import components to index file and export list"
   },
@@ -313,16 +313,16 @@
   "DestructingObject": {
     "prefix": "destructing-object",
     "body": ["const {${2}} = ${1}"],
-    "description": "Creates and assigns a local variable using object destructing"
+    "description": "Declare variables using using object destructing"
   },
   "DestructingArray": {
     "prefix": "destructing-array",
     "body": ["const [${2}] = ${1}"],
-    "description": "Creates and assigns a local variable using array destructing"
+    "description": "Declare variables using using array destructing"
   },
   "Promise": {
     "prefix": "promise",
     "body": ["return new Promise((resolve, reject) => { ${1} })"],
-    "description": "Creates and returns a new Promise"
+    "description": "Create and return a new Promise"
   }
 }
